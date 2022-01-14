@@ -5,11 +5,11 @@
 
 <p align="left"> <a href="https://twitter.com/arjunarz3" target="blank"><img src="https://img.shields.io/twitter/follow/arjunarz3?logo=twitter&style=for-the-badge" alt="arjunarz3" /></a> </p>
 
-- 🔭 I’m currently working on [Education app](Myloops.in)
+- 🔭 I’m currently working on [Education app](hackaro.com)
 
 - 🌱 I’m currently learning **Javascript**
 
-- 👯 I’m looking to collaborate on [Myloops](Myloops.in)
+- 👯 I’m looking to collaborate on [hackaro](hackaro.com)
 
 - 👨‍💻 All of my projects are available at [Denotech.in](Denotech.in)
 
