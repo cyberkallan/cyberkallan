@@ -1,4 +1,4 @@
-<h1 align="center">Hi 👋, I'm ARJUN ARZ</h1>
+<h1 align="center">Hi 👋, I'm ARJUN TM</h1>
 
 <h3 align="center">Cyber security analyst and bughunter</h3>
 
