@@ -14,7 +14,7 @@
 
 - 👨‍💻 All of my projects are available at [https://github.com/cyberkallan?tab=repositories](https://github.com/cyberkallan?tab=repositories)
 
-- 📫 How to reach me **arjun@denotech.in**
+- 📫 How to reach me **arjun@denotech.shop**
 
 - ⚡ Fun fact **Only I do coding if i have mood**
 
