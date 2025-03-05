@@ -5,7 +5,7 @@
 
 <!-- CYBERPUNK PROFILE IMAGE -->
 <p align="center">
-  <img src="https://i.ibb.co/JwydfsZ/Picsart-25-03-05-21-34-45-704.jpg" width="600">
+  <img src="(https://ibb.co/FL0WSDpn)" width="600">
 </p>
 
 <!-- SHORT BIO -->
