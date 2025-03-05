@@ -1,72 +1,42 @@
-<!-- 🔥 Animated Hacker GIF Background -->
-<p align="center">
-  <img src="[https://i.ibb.co/JwydfsZC/Picsart-25-03-05-21-34-45-704.jpg]" width="100%">
-</p>
-
-<!-- 🚀 Main Title with Hacker Font -->
+<!-- CENTERED HACKER INTRO -->
 <h1 align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?size=25&duration=4000&color=00FF00&center=true&vCenter=true&multiline=true&width=500&height=60&lines=Welcome+to+the+Dark+Side...;I+am+ARJUN+👨‍💻;Cyber+Security+Analyst+%26+Bug+Bounty+Hunter">
+  <img src="https://readme-typing-svg.herokuapp.com?font=monospace&size=24&color=00FF00&center=true&vCenter=true&width=600&lines=Welcome+to+CyberKallan's+World...;Initializing+Hack+Environment...;Access+Granted...;Enjoy+Your+Stay!" />
 </h1>
 
----
-
-<!-- 🏆 Trophies -->
+<!-- CYBERPUNK PROFILE IMAGE -->
 <p align="center">
-  <a href="https://github.com/ryo-ma/github-profile-trophy">
-    <img src="https://github-profile-trophy.vercel.app/?username=cyberkallan&theme=matrix&margin-w=15" />
-  </a>
+  <img src="https://i.ibb.co/JwydfsZ/Picsart-25-03-05-21-34-45-704.jpg" width="600">
+</p>
+
+<!-- SHORT BIO -->
+<h3 align="center">⚡ Cybersecurity Analyst | Ethical Hacker | Bug Bounty Hunter ⚡</h3>
+
+<p align="center">
+  <img src="https://github-profile-trophy.vercel.app/?username=cyberkallan&theme=matrix&row=1&column=6" alt="cyberkallan trophies" />
 </p>
 
 ---
 
-## 👾 **Who Am I?**
-- 🔭 I’m currently working on [Hackaro App](https://Hackaro.com)  
-- 🌱 I’m learning **JavaScript & Ethical Hacking**  
-- 👯 I’m open to **collaborations on CyberSec & Dev Projects**  
-- 💻 All my projects: [GitHub Repos](https://github.com/cyberkallan?tab=repositories)  
-- 📫 Reach me at **arjun@denotech.shop**  
-- ⚡ Fun fact: **I only code when I feel like a hacker 😆**  
-
----
-
-## 🛠️ **Tech Stack**
+## **🛠️ Tech Stack**
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=python,js,nodejs,php,linux,hackerrank,django,mysql,mongodb,aws,git" />
+  <img src="https://skillicons.dev/icons?i=python,javascript,html,css,bootstrap,nodejs,mysql,mongodb,linux,git,github,aws,hacking" />
 </p>
 
 ---
 
-## 🚀 **GitHub Stats**
-<p align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=cyberkallan&theme=matrix" />
-</p>
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=cyberkallan&layout=compact&theme=matrix" />
-</p>
-
----
-
-## 🌍 **Connect With Me**
-<p align="center">
-  <a href="https://twitter.com/arjunarz3"><img src="https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white"></a>
-  <a href="https://linkedin.com/in/arjun-arz-39a64a1ba"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"></a>
-  <a href="https://instagram.com/imarjunarz"><img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white"></a>
-  <a href="https://youtube.com/c/cyberkallan2"><img src="https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white"></a>
-</p>
-
----
-
-## 💰 **Support My Work**
-<p align="center">
-  <a href="https://www.buymeacoffee.com/Cyberkallan">
-    <img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" height="50" width="210">
-  </a>
-</p>
-
----
-
-## 🎮 **Bonus: Live Hacker-Themed Page**
-**🔥 Want a fully interactive Matrix-style profile page?**  
-Visit: [CyberKallan GitHub Page](https://cyberkallan.github.io)  
-
----
+## **🖥️ Hacker Terminal**
+```sh
+root@CyberKallan:~$ nmap -A target.com
+Starting Nmap 7.91 ( https://nmap.org ) at 2025-03-05 22:00 IST
+Nmap scan report for target.com (192.168.1.1)
+Host is up (0.0023s latency).
+Not shown: 997 closed ports
+PORT     STATE SERVICE
+22/tcp   open  ssh
+80/tcp   open  http
+443/tcp  open  https
+MAC Address: 00:1A:2B:3C:4D:5E (Unknown)
+root@CyberKallan:~$ exploit target.com
+[+] Exploiting target.com...
+[+] Bypassing Firewall...
+[+] Access Granted!
