@@ -1,6 +1,6 @@
 <!-- 🔥 Animated Hacker GIF Background -->
 <p align="center">
-  <img src="https://i.imgur.com/wnHB6ts.gif" width="100%">
+  <img src="[https://i.ibb.co/JwydfsZC/Picsart-25-03-05-21-34-45-704.jpg]" width="100%">
 </p>
 
 <!-- 🚀 Main Title with Hacker Font -->
