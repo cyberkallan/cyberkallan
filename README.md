@@ -12,7 +12,7 @@
 <h3 align="center">⚡ Cybersecurity Analyst | Ethical Hacker | Bug Bounty Hunter ⚡</h3>
 
 <p align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=cyberkallan&theme=matrix&row=1&column=6" alt="cyberkallan trophies" />
+  <img src="https://github-profile-trophy.vercel.app/?username=cyberkallan&theme=matrix&row=1&column=6" alt="cyberkallan trophies"/>
 </p>
 
 ---
