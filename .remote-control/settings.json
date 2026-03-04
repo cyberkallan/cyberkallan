@@ -1,0 +1,10 @@
+{
+  "notifEnabled": true,
+  "notifTypes": {
+    "agent_done": true,
+    "approval_needed": true,
+    "agent_error": true,
+    "new_message": true
+  },
+  "theme": "dark"
+}

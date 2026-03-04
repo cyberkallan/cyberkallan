@@ -7,7 +7,14 @@
 <!--  ╚═════╝   ╚═╝   ╚═════╝ ╚══════╝╚═╝  ╚═╝╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝╚══════╝╚═╝  ╚═╝╚═╝ ╚═══╝ -->
 <!-- ═══════════════════════════════════════════════════════════════════════════════════ -->
 
-<!-- PREMIUM BANNER -->
+<!-- ╔══════════════════════════════════════════════════════════════╗ -->
+<!-- ║              🔥 CAPSULE-RENDER ANIMATED HEADER 🔥           ║ -->
+<!-- ╚══════════════════════════════════════════════════════════════╝ -->
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=venom&color=0:0D1117,50:00D4FF,100:A855F7&height=220&section=header&text=CYBERKALLAN&fontSize=65&fontColor=00D4FF&animation=twinkling&fontAlignY=35&desc=Cybersecurity%20Analyst%20%7C%20Ethical%20Hacker%20%7C%20Bug%20Bounty%20Hunter&descSize=18&descColor=E2E8F0&descAlignY=58" width="100%" alt="Header" />
+</p>
+
+<!-- CUSTOM CYBERPUNK BANNER -->
 <p align="center">
   <img src="assets/banner.png" alt="CyberKallan Banner" width="100%" />
 </p>
@@ -15,16 +22,31 @@
 <!-- ANIMATED TYPING HEADER -->
 <p align="center">
   <a href="https://github.com/cyberkallan">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=28&duration=3000&pause=1000&color=00FF41&center=true&vCenter=true&multiline=true&repeat=true&random=false&width=800&height=100&lines=%F0%9F%94%90+Welcome+to+CyberKallan's+Fortress+%F0%9F%94%90;%E2%9A%A1+Cybersecurity+Analyst+%7C+Ethical+Hacker+%E2%9A%A1;%F0%9F%8E%AF+Bug+Bounty+Hunter+%7C+Pentester+%F0%9F%8E%AF;%F0%9F%92%80+Turning+Vulnerabilities+Into+Knowledge+%F0%9F%92%80" alt="Typing SVG" />
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=28&duration=3000&pause=1000&color=00D4FF&center=true&vCenter=true&multiline=true&repeat=true&random=false&width=900&height=120&lines=%E2%9A%A1+Welcome+to+CyberKallan's+Digital+Fortress+%E2%9A%A1;%F0%9F%94%90+Cybersecurity+Analyst+%7C+Ethical+Hacker+%F0%9F%94%90;%F0%9F%8E%AF+Bug+Bounty+Hunter+%7C+Pentester+%F0%9F%8E%AF;%F0%9F%92%80+Turning+Vulnerabilities+Into+Knowledge+%F0%9F%92%80;%F0%9F%9B%A1%EF%B8%8F+Securing+the+Digital+World+%F0%9F%9B%A1%EF%B8%8F" alt="Typing SVG" />
   </a>
 </p>
 
-<!-- WAVE DIVIDER -->
-<img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png" width="100%" alt="divider" />
+<!-- PROFILE BADGES -->
+<p align="center">
+  <img src="https://komarev.com/ghpvc/?username=cyberkallan&label=PROFILE+VIEWS&color=00D4FF&style=flat-square&logo=github" alt="Profile Views" />
+  &nbsp;&nbsp;
+  <img src="https://img.shields.io/github/followers/cyberkallan?label=FOLLOWERS&logo=github&color=A855F7&style=flat-square" alt="Followers" />
+  &nbsp;&nbsp;
+  <img src="https://img.shields.io/github/stars/cyberkallan?label=TOTAL+STARS&logo=github&color=00D4FF&style=flat-square" alt="Stars" />
+</p>
 
-<!-- ═══════════════ ABOUT ME — HACKER PROFILE CARD ═══════════════ -->
+<!-- PREMIUM DIVIDER -->
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%" alt="divider" />
 
-<h2 align="center">💀 HACKER PROFILE 💀</h2>
+<!-- ╔══════════════════════════════════════════════════════════════╗ -->
+<!-- ║                    💀 HACKER PROFILE 💀                      ║ -->
+<!-- ╚══════════════════════════════════════════════════════════════╝ -->
+
+<h2 align="center">
+  <img src="https://media.giphy.com/media/iY8CRBdQXODJSCERIr/giphy.gif" width="30" />
+  <samp>&nbsp;HACKER PROFILE&nbsp;</samp>
+  <img src="https://media.giphy.com/media/iY8CRBdQXODJSCERIr/giphy.gif" width="30" />
+</h2>
 
 <div align="center">
 
@@ -39,70 +61,71 @@
 ║   ╚═════╝╚═╝  ╚═╝    OS      : Kali Linux / Parrot OS          ║
 ║                       Shell   : zsh / bash                       ║
 ║                       Editor  : vim / VS Code                    ║
+║                       Website : arjunarz.com                     ║
 ║                                                                  ║
 ╚══════════════════════════════════════════════════════════════════╝
 ```
 
 </div>
 
-<p align="center">
-  <img src="https://komarev.com/ghpvc/?username=cyberkallan&label=PROFILE+VIEWS&color=00ff41&style=for-the-badge&logo=github" alt="Profile Views" />
-  <img src="https://img.shields.io/github/followers/cyberkallan?label=FOLLOWERS&logo=github&color=00ff41&style=for-the-badge" alt="Followers" />
-  <img src="https://img.shields.io/github/stars/cyberkallan?label=TOTAL+STARS&logo=github&color=00ff41&style=for-the-badge" alt="Stars" />
-</p>
-
 <br/>
 
-<img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png" width="100%" alt="divider" />
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%" alt="divider" />
 
-<!-- ═══════════════ TECH ARSENAL ═══════════════ -->
+<!-- ╔══════════════════════════════════════════════════════════════╗ -->
+<!-- ║                    🛡️ TECH ARSENAL 🛡️                       ║ -->
+<!-- ╚══════════════════════════════════════════════════════════════╝ -->
 
-<h2 align="center">🛡️ TECH ARSENAL 🛡️</h2>
+<h2 align="center">
+  <img src="https://media2.giphy.com/media/QssGEmpkyEOhBCb7e1/giphy.gif?cid=ecf05e47a0n3gi1bfqntqmob8g9aid1oyj2wr3ds3mg700bl&rid=giphy.gif" width="28" />
+  <samp>&nbsp;TECH ARSENAL&nbsp;</samp>
+  <img src="https://media2.giphy.com/media/QssGEmpkyEOhBCb7e1/giphy.gif?cid=ecf05e47a0n3gi1bfqntqmob8g9aid1oyj2wr3ds3mg700bl&rid=giphy.gif" width="28" />
+</h2>
 
 <h3 align="center">⚔️ Offensive Security & Pentesting</h3>
 <p align="center">
-  <img src="https://img.shields.io/badge/Kali_Linux-557C94?style=for-the-badge&logo=kalilinux&logoColor=white" alt="Kali" />
-  <img src="https://img.shields.io/badge/Metasploit-2596CD?style=for-the-badge&logo=metasploit&logoColor=white" alt="Metasploit" />
-  <img src="https://img.shields.io/badge/Burp_Suite-FF6633?style=for-the-badge&logo=burpsuite&logoColor=white" alt="Burp Suite" />
-  <img src="https://img.shields.io/badge/Nmap-0E83CD?style=for-the-badge&logo=nmap&logoColor=white" alt="Nmap" />
-  <img src="https://img.shields.io/badge/Wireshark-1679A7?style=for-the-badge&logo=wireshark&logoColor=white" alt="Wireshark" />
-  <img src="https://img.shields.io/badge/SQLMap-CC0000?style=for-the-badge&logo=databricks&logoColor=white" alt="SQLMap" />
-  <img src="https://img.shields.io/badge/OWASP-000000?style=for-the-badge&logo=owasp&logoColor=white" alt="OWASP" />
-  <img src="https://img.shields.io/badge/Hashcat-5C2D91?style=for-the-badge&logo=hackthebox&logoColor=white" alt="Hashcat" />
-  <img src="https://img.shields.io/badge/John_The_Ripper-CC0000?style=for-the-badge&logo=hackthebox&logoColor=white" alt="John" />
+  <img src="https://img.shields.io/badge/Kali_Linux-557C94?style=flat-square&logo=kalilinux&logoColor=white" alt="Kali" />
+  <img src="https://img.shields.io/badge/Metasploit-2596CD?style=flat-square&logo=metasploit&logoColor=white" alt="Metasploit" />
+  <img src="https://img.shields.io/badge/Burp_Suite-FF6633?style=flat-square&logo=burpsuite&logoColor=white" alt="Burp Suite" />
+  <img src="https://img.shields.io/badge/Nmap-0E83CD?style=flat-square&logo=nmap&logoColor=white" alt="Nmap" />
+  <img src="https://img.shields.io/badge/Wireshark-1679A7?style=flat-square&logo=wireshark&logoColor=white" alt="Wireshark" />
+  <img src="https://img.shields.io/badge/SQLMap-CC0000?style=flat-square&logo=databricks&logoColor=white" alt="SQLMap" />
+  <img src="https://img.shields.io/badge/OWASP-000000?style=flat-square&logo=owasp&logoColor=white" alt="OWASP" />
+  <img src="https://img.shields.io/badge/Hashcat-5C2D91?style=flat-square&logo=hackthebox&logoColor=white" alt="Hashcat" />
+  <img src="https://img.shields.io/badge/John_The_Ripper-CC0000?style=flat-square&logo=hackthebox&logoColor=white" alt="John" />
 </p>
 
 <h3 align="center">💻 Languages & Scripting</h3>
 <p align="center">
-  <img src="https://img.shields.io/badge/Python-14354C?style=for-the-badge&logo=python&logoColor=white" alt="Python" />
-  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript" />
-  <img src="https://img.shields.io/badge/Bash-4EAA25?style=for-the-badge&logo=gnubash&logoColor=white" alt="Bash" />
-  <img src="https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white" alt="PHP" />
-  <img src="https://img.shields.io/badge/Perl-39457E?style=for-the-badge&logo=perl&logoColor=white" alt="Perl" />
-  <img src="https://img.shields.io/badge/Shell_Script-121011?style=for-the-badge&logo=gnubash&logoColor=white" alt="Shell" />
-  <img src="https://img.shields.io/badge/PowerShell-5391FE?style=for-the-badge&logo=powershell&logoColor=white" alt="PowerShell" />
+  <img src="https://img.shields.io/badge/Python-14354C?style=flat-square&logo=python&logoColor=white" alt="Python" />
+  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black" alt="JavaScript" />
+  <img src="https://img.shields.io/badge/Bash-4EAA25?style=flat-square&logo=gnubash&logoColor=white" alt="Bash" />
+  <img src="https://img.shields.io/badge/PHP-777BB4?style=flat-square&logo=php&logoColor=white" alt="PHP" />
+  <img src="https://img.shields.io/badge/Perl-39457E?style=flat-square&logo=perl&logoColor=white" alt="Perl" />
+  <img src="https://img.shields.io/badge/Shell_Script-121011?style=flat-square&logo=gnubash&logoColor=white" alt="Shell" />
+  <img src="https://img.shields.io/badge/PowerShell-5391FE?style=flat-square&logo=powershell&logoColor=white" alt="PowerShell" />
 </p>
 
 <h3 align="center">🌐 Web, Cloud & Infrastructure</h3>
 <p align="center">
-  <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5" />
-  <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3" />
-  <img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white" alt="Node.js" />
-  <img src="https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazonaws&logoColor=white" alt="AWS" />
-  <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" alt="Docker" />
-  <img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black" alt="Linux" />
-  <img src="https://img.shields.io/badge/Nginx-009639?style=for-the-badge&logo=nginx&logoColor=white" alt="Nginx" />
+  <img src="https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white" alt="HTML5" />
+  <img src="https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white" alt="CSS3" />
+  <img src="https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white" alt="Node.js" />
+  <img src="https://img.shields.io/badge/AWS-232F3E?style=flat-square&logo=amazonaws&logoColor=white" alt="AWS" />
+  <img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white" alt="Docker" />
+  <img src="https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black" alt="Linux" />
+  <img src="https://img.shields.io/badge/Nginx-009639?style=flat-square&logo=nginx&logoColor=white" alt="Nginx" />
 </p>
 
 <h3 align="center">🔧 Tools & Databases</h3>
 <p align="center">
-  <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" alt="Git" />
-  <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
-  <img src="https://img.shields.io/badge/VS_Code-007ACC?style=for-the-badge&logo=visualstudiocode&logoColor=white" alt="VS Code" />
-  <img src="https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white" alt="MongoDB" />
-  <img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white" alt="MySQL" />
-  <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white" alt="PostgreSQL" />
-  <img src="https://img.shields.io/badge/Vim-019733?style=for-the-badge&logo=vim&logoColor=white" alt="Vim" />
+  <img src="https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white" alt="Git" />
+  <img src="https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white" alt="GitHub" />
+  <img src="https://img.shields.io/badge/VS_Code-007ACC?style=flat-square&logo=visualstudiocode&logoColor=white" alt="VS Code" />
+  <img src="https://img.shields.io/badge/MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white" alt="MongoDB" />
+  <img src="https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white" alt="MySQL" />
+  <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white" alt="PostgreSQL" />
+  <img src="https://img.shields.io/badge/Vim-019733?style=flat-square&logo=vim&logoColor=white" alt="Vim" />
 </p>
 
 <br/>
@@ -114,28 +137,46 @@
 
 <br/>
 
-<img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png" width="100%" alt="divider" />
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%" alt="divider" />
 
-<!-- ═══════════════ GITHUB STATS DASHBOARD ═══════════════ -->
+<!-- ╔══════════════════════════════════════════════════════════════╗ -->
+<!-- ║              📊 GITHUB STATS DASHBOARD 📊                   ║ -->
+<!-- ╚══════════════════════════════════════════════════════════════╝ -->
 
-<h2 align="center">📊 GITHUB STATS DASHBOARD 📊</h2>
+<h2 align="center">
+  <img src="https://media.giphy.com/media/W5eoZHPpUx9sapR0eu/giphy.gif" width="28" />
+  <samp>&nbsp;GITHUB STATS DASHBOARD&nbsp;</samp>
+  <img src="https://media.giphy.com/media/W5eoZHPpUx9sapR0eu/giphy.gif" width="28" />
+</h2>
 
+<!-- Streak Stats -->
 <p align="center">
-  <img width="49%" src="https://github-readme-stats.vercel.app/api?username=cyberkallan&show_icons=true&theme=radical&hide_border=true&bg_color=0D1117&title_color=00FF41&icon_color=00FF41&text_color=C9D1D9&ring_color=00FF41&count_private=true&include_all_commits=true" alt="GitHub Stats" />
-  <img width="49%" src="https://github-readme-streak-stats.herokuapp.com/?user=cyberkallan&theme=radical&hide_border=true&background=0D1117&ring=00FF41&fire=00FF41&currStreakLabel=00FF41&sideLabels=00FF41&currStreakNum=C9D1D9&sideNums=C9D1D9&dates=555555" alt="GitHub Streak" />
+  <a href="https://github.com/cyberkallan">
+    <img width="70%" src="https://streak-stats.demolab.com?user=cyberkallan&theme=highcontrast&hide_border=true&border_radius=15&background=0D1117&ring=00D4FF&fire=A855F7&currStreakLabel=00D4FF&sideLabels=00D4FF&currStreakNum=FFFFFF&sideNums=FFFFFF&dates=555555&stroke=00D4FF40" alt="GitHub Streak" />
+  </a>
 </p>
 
+<!-- GitHub Stats & Top Languages — using OFFICIAL github-readme-stats -->
 <p align="center">
-  <img width="40%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=cyberkallan&layout=compact&theme=radical&hide_border=true&bg_color=0D1117&title_color=00FF41&text_color=C9D1D9&langs_count=10" alt="Top Languages" />
+  <a href="https://github.com/cyberkallan">
+    <img width="49%" src="https://github-readme-stats.vercel.app/api?username=cyberkallan&show_icons=true&hide_border=true&border_radius=15&bg_color=0D1117&title_color=00D4FF&icon_color=A855F7&text_color=E2E8F0&ring_color=00D4FF&count_private=true&include_all_commits=true" alt="GitHub Stats" />
+  </a>
+  <a href="https://github.com/cyberkallan">
+    <img width="41%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=cyberkallan&layout=compact&hide_border=true&border_radius=15&bg_color=0D1117&title_color=00D4FF&text_color=E2E8F0&langs_count=10" alt="Top Languages" />
+  </a>
 </p>
 
 <br/>
 
-<img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png" width="100%" alt="divider" />
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%" alt="divider" />
 
-<!-- ═══════════════ CONTRIBUTION SNAKE ═══════════════ -->
+<!-- ╔══════════════════════════════════════════════════════════════╗ -->
+<!-- ║              🐍 CONTRIBUTION SNAKE 🐍                       ║ -->
+<!-- ╚══════════════════════════════════════════════════════════════╝ -->
 
-<h2 align="center">🐍 CONTRIBUTION SNAKE 🐍</h2>
+<h2 align="center">
+  <samp>&nbsp;🐍 CONTRIBUTION SNAKE 🐍&nbsp;</samp>
+</h2>
 
 <p align="center">
   <picture>
@@ -147,11 +188,15 @@
 
 <br/>
 
-<img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png" width="100%" alt="divider" />
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%" alt="divider" />
 
-<!-- ═══════════════ 3D CONTRIBUTION GRAPH ═══════════════ -->
+<!-- ╔══════════════════════════════════════════════════════════════╗ -->
+<!-- ║              📈 3D CONTRIBUTION CALENDAR 📈                 ║ -->
+<!-- ╚══════════════════════════════════════════════════════════════╝ -->
 
-<h2 align="center">📈 3D CONTRIBUTION CALENDAR 📈</h2>
+<h2 align="center">
+  <samp>&nbsp;📈 3D CONTRIBUTION CALENDAR 📈&nbsp;</samp>
+</h2>
 
 <p align="center">
   <img src="./profile-3d-contrib/profile-night-green.svg" alt="3D Contribution Graph" width="100%" />
@@ -159,120 +204,91 @@
 
 <br/>
 
-<img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png" width="100%" alt="divider" />
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%" alt="divider" />
 
-<!-- ═══════════════ GITHUB TROPHIES ═══════════════ -->
+<!-- ╔══════════════════════════════════════════════════════════════╗ -->
+<!-- ║              🏆 GITHUB TROPHIES 🏆                          ║ -->
+<!-- ╚══════════════════════════════════════════════════════════════╝ -->
 
-<h2 align="center">🏆 GITHUB TROPHIES 🏆</h2>
+<h2 align="center">
+  <samp>&nbsp;🏆 GITHUB TROPHIES 🏆&nbsp;</samp>
+</h2>
 
 <p align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=cyberkallan&theme=radical&no-frame=true&no-bg=true&column=7&margin-w=15&margin-h=15" alt="GitHub Trophies" />
+  <a href="https://github.com/ryo-ma/github-profile-trophy">
+    <img src="https://github-profile-trophy.vercel.app/?username=cyberkallan&theme=algolia&no-frame=true&column=7&margin-w=15&margin-h=15" alt="GitHub Trophies" width="100%" />
+  </a>
 </p>
 
 <br/>
 
-<img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png" width="100%" alt="divider" />
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%" alt="divider" />
 
-<!-- ═══════════════ FEATURED PROJECTS ═══════════════ -->
+<!-- ╔══════════════════════════════════════════════════════════════╗ -->
+<!-- ║              🔥 FEATURED PROJECTS 🔥                        ║ -->
+<!-- ╚══════════════════════════════════════════════════════════════╝ -->
 
-<h2 align="center">🔥 FEATURED PROJECTS 🔥</h2>
+<h2 align="center">
+  <img src="https://media.giphy.com/media/iY8CRBdQXODJSCERIr/giphy.gif" width="28" />
+  <samp>&nbsp;FEATURED PROJECTS&nbsp;</samp>
+  <img src="https://media.giphy.com/media/iY8CRBdQXODJSCERIr/giphy.gif" width="28" />
+</h2>
 
+<!-- Using OFFICIAL github-readme-stats for pin cards -->
 <p align="center">
   <a href="https://github.com/cyberkallan/-">
-    <img width="49%" src="https://github-readme-stats.vercel.app/api/pin/?username=cyberkallan&repo=-&theme=radical&hide_border=true&bg_color=0D1117&title_color=00FF41&icon_color=00FF41&text_color=C9D1D9" alt="Pentesting Toolkit" />
+    <img width="49%" src="https://github-readme-stats.vercel.app/api/pin/?username=cyberkallan&repo=-&hide_border=true&border_radius=15&bg_color=0D1117&title_color=00D4FF&icon_color=A855F7&text_color=E2E8F0" alt="Pentesting Toolkit" />
   </a>
   <a href="https://github.com/cyberkallan/inshackle-bot">
-    <img width="49%" src="https://github-readme-stats.vercel.app/api/pin/?username=cyberkallan&repo=inshackle-bot&theme=radical&hide_border=true&bg_color=0D1117&title_color=00FF41&icon_color=00FF41&text_color=C9D1D9" alt="Inshackle Bot" />
+    <img width="49%" src="https://github-readme-stats.vercel.app/api/pin/?username=cyberkallan&repo=inshackle-bot&hide_border=true&border_radius=15&bg_color=0D1117&title_color=00D4FF&icon_color=A855F7&text_color=E2E8F0" alt="Inshackle Bot" />
   </a>
 </p>
 
 <p align="center">
   <a href="https://github.com/cyberkallan/IG-blaster">
-    <img width="49%" src="https://github-readme-stats.vercel.app/api/pin/?username=cyberkallan&repo=IG-blaster&theme=radical&hide_border=true&bg_color=0D1117&title_color=00FF41&icon_color=00FF41&text_color=C9D1D9" alt="IG Blaster" />
+    <img width="49%" src="https://github-readme-stats.vercel.app/api/pin/?username=cyberkallan&repo=IG-blaster&hide_border=true&border_radius=15&bg_color=0D1117&title_color=00D4FF&icon_color=A855F7&text_color=E2E8F0" alt="IG Blaster" />
   </a>
   <a href="https://github.com/cyberkallan/cyberkallan">
-    <img width="49%" src="https://github-readme-stats.vercel.app/api/pin/?username=cyberkallan&repo=cyberkallan&theme=radical&hide_border=true&bg_color=0D1117&title_color=00FF41&icon_color=00FF41&text_color=C9D1D9" alt="Profile Repo" />
+    <img width="49%" src="https://github-readme-stats.vercel.app/api/pin/?username=cyberkallan&repo=cyberkallan&hide_border=true&border_radius=15&bg_color=0D1117&title_color=00D4FF&icon_color=A855F7&text_color=E2E8F0" alt="Profile Repo" />
   </a>
 </p>
 
 <br/>
 
-<img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png" width="100%" alt="divider" />
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%" alt="divider" />
 
-<!-- ═══════════════ HACKER TERMINAL ═══════════════ -->
+<!-- ╔══════════════════════════════════════════════════════════════╗ -->
+<!-- ║              📉 ACTIVITY GRAPH 📉                           ║ -->
+<!-- ╚══════════════════════════════════════════════════════════════╝ -->
 
-<h2 align="center">💀 HACKER TERMINAL 💀</h2>
-
-<div align="center">
-
-```bash
-┌──(cyberkallan㉿kali)-[~]
-└─$ whoami
-cyberkallan — Cybersecurity Analyst | Ethical Hacker | Bug Bounty Hunter
-
-┌──(cyberkallan㉿kali)-[~]
-└─$ cat /etc/hacker_profile
-╭─────────────────────────────────────────────────────────╮
-│                                                         │
-│   ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄     │
-│   █  SYSTEM INFORMATION                           █     │
-│   ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀     │
-│                                                         │
-│   🔹 Codename    : CyberKallan                         │
-│   🔹 OS          : Kali Linux / Parrot OS               │
-│   🔹 Kernel      : 6.1.0-kali9-amd64                   │
-│   🔹 Uptime      : Since Day One                       │
-│   🔹 Shell       : /bin/zsh                             │
-│   🔹 Terminal    : Custom Hacker Suite                  │
-│   🔹 Skills      : Pentesting, OSINT, Web Hacking      │
-│   🔹 Weapons     : Metasploit, Burp Suite, Nmap        │
-│   🔹 Status      : 🟢 Active & Hunting                 │
-│                                                         │
-╰─────────────────────────────────────────────────────────╯
-
-┌──(cyberkallan㉿kali)-[~]
-└─$ nmap -sV --script=vuln target.com
-Starting Nmap 7.94 ( https://nmap.org )
-[*] Scanning target.com (192.168.1.1)...
-[*] Discovered 12 open ports
-[*] Running vulnerability scripts...
-[+] CVE-2024-XXXX : CRITICAL vulnerability found!
-[+] Generating exploit payload...
-[+] Shell access obtained!
-[✓] Report generated → /reports/target_assessment.pdf
-
-┌──(cyberkallan㉿kali)-[~]
-└─$ echo "Happy Hacking! 🏴‍☠️"
-```
-
-</div>
-
-<br/>
-
-<img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png" width="100%" alt="divider" />
-
-<!-- ═══════════════ ACTIVITY GRAPH ═══════════════ -->
-
-<h2 align="center">📉 ACTIVITY GRAPH 📉</h2>
+<h2 align="center">
+  <samp>&nbsp;📉 ACTIVITY GRAPH 📉&nbsp;</samp>
+</h2>
 
 <p align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=cyberkallan&bg_color=0D1117&color=00FF41&line=00FF41&point=FFFFFF&area_color=00FF41&area=true&hide_border=true&custom_title=CyberKallan's%20Contribution%20Graph" alt="Activity Graph" width="100%" />
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=cyberkallan&bg_color=0D1117&color=00D4FF&line=A855F7&point=FFFFFF&area_color=00D4FF&area=true&hide_border=true&custom_title=CyberKallan's%20Contribution%20Graph&radius=16" alt="Activity Graph" width="100%" />
 </p>
 
 <br/>
 
-<img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png" width="100%" alt="divider" />
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%" alt="divider" />
 
-<!-- ═══════════════ CONNECT WITH ME ═══════════════ -->
+<!-- ╔══════════════════════════════════════════════════════════════╗ -->
+<!-- ║              🌐 CONNECT WITH ME 🌐                          ║ -->
+<!-- ╚══════════════════════════════════════════════════════════════╝ -->
 
-<h2 align="center">🌐 CONNECT WITH ME 🌐</h2>
+<h2 align="center">
+  <img src="https://media.giphy.com/media/LnQjpWaON8nhr21vNW/giphy.gif" width="28" />
+  <samp>&nbsp;CONNECT WITH ME&nbsp;</samp>
+  <img src="https://media.giphy.com/media/LnQjpWaON8nhr21vNW/giphy.gif" width="28" />
+</h2>
 
 <p align="center">
   <a href="https://github.com/cyberkallan">
     <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
   </a>
   <a href="https://arjunarz.com">
-    <img src="https://img.shields.io/badge/Website-arjunarz.com-00FF41?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Website" />
+    <img src="https://img.shields.io/badge/Website-arjunarz.com-00D4FF?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Website" />
   </a>
   <a href="https://linkedin.com/in/cyberkallan">
     <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
@@ -293,30 +309,20 @@ Starting Nmap 7.94 ( https://nmap.org )
 
 <br/>
 
-<img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png" width="100%" alt="divider" />
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%" alt="divider" />
 
-<!-- ═══════════════ RANDOM DEV QUOTE ═══════════════ -->
-
-<h2 align="center">💬 HACKER QUOTE 💬</h2>
-
-<p align="center">
-  <img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=radical" alt="Dev Quote" />
-</p>
-
-<br/>
-
-<img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png" width="100%" alt="divider" />
-
-<!-- ═══════════════ FOOTER ═══════════════ -->
+<!-- ╔══════════════════════════════════════════════════════════════╗ -->
+<!-- ║                    🔥 PREMIUM FOOTER 🔥                     ║ -->
+<!-- ╚══════════════════════════════════════════════════════════════╝ -->
 
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=170&section=footer&text=CYBERKALLAN&fontSize=42&fontColor=00FF41&animation=twinkling&fontAlignY=65&desc=Securing%20the%20Digital%20World%20%7C%20One%20Vulnerability%20at%20a%20Time&descSize=16&descColor=C9D1D9&descAlignY=85" width="100%" alt="Footer" />
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=27,30,32&height=170&section=footer&text=CYBERKALLAN&fontSize=42&fontColor=00D4FF&animation=twinkling&fontAlignY=65&desc=Securing%20the%20Digital%20World%20%7C%20One%20Vulnerability%20at%20a%20Time&descSize=16&descColor=E2E8F0&descAlignY=85" width="100%" alt="Footer" />
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Made_with-💚_by_CyberKallan-00FF41?style=for-the-badge" alt="Made with love" />
+  <img src="https://img.shields.io/badge/Made_with-💚_by_CyberKallan-00D4FF?style=for-the-badge" alt="Made with love" />
 </p>
 
 <!-- ═══════════════════════════════════════════════════════════════════════════════════ -->
-<!-- ⚡ POWERED BY: GitHub Actions | Platane/snk | github-readme-stats | shields.io ⚡ -->
+<!-- ⚡ POWERED BY: GitHub Actions | github-readme-stats | capsule-render ⚡ -->
 <!-- ═══════════════════════════════════════════════════════════════════════════════════ -->
