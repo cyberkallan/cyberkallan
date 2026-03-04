@@ -1,22 +1,13 @@
 <!-- ═══════════════════════════════════════════════════════════════════════════════════ -->
 <!-- ██████╗██╗   ██╗██████╗ ███████╗██████╗ ██╗  ██╗ █████╗ ██╗     ██╗      █████╗ ███╗   ██╗ -->
-<!-- ██╔════╝╚██╗ ██╔╝██╔══██╗██╔════╝██╔══██╗██║ ██╔╝██╔══██╗██║     ██║     ██╔══██╗████╗  ██║ -->
-<!-- ██║      ╚████╔╝ ██████╔╝█████╗  ██████╔╝█████╔╝ ███████║██║     ██║     ███████║██╔██╗ ██║ -->
-<!-- ██║       ╚██╔╝  ██╔══██╗██╔══╝  ██╔══██╗██╔═██╗ ██╔══██║██║     ██║     ██╔══██║██║╚██╗██║ -->
-<!-- ╚██████╗   ██║   ██████╔╝███████╗██║  ██║██║  ██╗██║  ██║███████╗███████╗██║  ██║██║ ╚████║ -->
-<!--  ╚═════╝   ╚═╝   ╚═════╝ ╚══════╝╚═╝  ╚═╝╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝╚══════╝╚═╝  ╚═╝╚═╝ ╚═══╝ -->
+<!-- ╚══════╝╚═╝   ╚═╝╚═════╝ ╚══════╝╚═╝  ╚═╝╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝╚══════╝╚═╝  ╚═╝╚═╝ ╚═══╝ -->
 <!-- ═══════════════════════════════════════════════════════════════════════════════════ -->
 
 <!-- ╔══════════════════════════════════════════════════════════════╗ -->
-<!-- ║              🔥 CAPSULE-RENDER ANIMATED HEADER 🔥           ║ -->
+<!-- ║              🎬 VIDEO HEADER 🎬                              ║ -->
 <!-- ╚══════════════════════════════════════════════════════════════╝ -->
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=venom&color=0:0D1117,50:00D4FF,100:A855F7&height=220&section=header&text=CYBERKALLAN&fontSize=65&fontColor=00D4FF&animation=twinkling&fontAlignY=35&desc=Cybersecurity%20Analyst%20%7C%20Ethical%20Hacker%20%7C%20Bug%20Bounty%20Hunter&descSize=18&descColor=E2E8F0&descAlignY=58" width="100%" alt="Header" />
-</p>
-
-<!-- CUSTOM CYBERPUNK BANNER -->
-<p align="center">
-  <img src="assets/banner.png" alt="CyberKallan Banner" width="100%" />
+  <video src="https://github.com/cyberkallan/cyberkallan/raw/main/VN20260304_233249.mp4" width="100%" autoplay loop muted playsinline></video>
 </p>
 
 <!-- ANIMATED TYPING HEADER -->
@@ -149,14 +140,14 @@
   <img src="https://media.giphy.com/media/W5eoZHPpUx9sapR0eu/giphy.gif" width="28" />
 </h2>
 
-<!-- Streak Stats -->
+<!-- Streak Stats (reliable - no proxy issue) -->
 <p align="center">
   <a href="https://github.com/cyberkallan">
     <img width="70%" src="https://streak-stats.demolab.com?user=cyberkallan&theme=highcontrast&hide_border=true&border_radius=15&background=0D1117&ring=00D4FF&fire=A855F7&currStreakLabel=00D4FF&sideLabels=00D4FF&currStreakNum=FFFFFF&sideNums=FFFFFF&dates=555555&stroke=00D4FF40" alt="GitHub Streak" />
   </a>
 </p>
 
-<!-- GitHub Stats & Top Languages — using OFFICIAL github-readme-stats -->
+<!-- GitHub Stats & Top Languages — direct API (renders on-the-fly) -->
 <p align="center">
   <a href="https://github.com/cyberkallan">
     <img width="49%" src="https://github-readme-stats.vercel.app/api?username=cyberkallan&show_icons=true&hide_border=true&border_radius=15&bg_color=0D1117&title_color=00D4FF&icon_color=A855F7&text_color=E2E8F0&ring_color=00D4FF&count_private=true&include_all_commits=true" alt="GitHub Stats" />
@@ -202,6 +193,8 @@
   <img src="./profile-3d-contrib/profile-night-green.svg" alt="3D Contribution Graph" width="100%" />
 </p>
 
+<!-- NOTE: This requires the 3D Contribution Graph workflow to have run at least once -->
+
 <br/>
 
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%" alt="divider" />
@@ -214,10 +207,9 @@
   <samp>&nbsp;🏆 GITHUB TROPHIES 🏆&nbsp;</samp>
 </h2>
 
+<!-- Trophies — direct API (renders on-the-fly) -->
 <p align="center">
-  <a href="https://github.com/ryo-ma/github-profile-trophy">
-    <img src="https://github-profile-trophy.vercel.app/?username=cyberkallan&theme=algolia&no-frame=true&column=7&margin-w=15&margin-h=15" alt="GitHub Trophies" width="100%" />
-  </a>
+  <img src="https://github-profile-trophy.vercel.app/?username=cyberkallan&theme=algolia&no-frame=true&no-bg=true&column=7&margin-w=15&margin-h=15" alt="GitHub Trophies" width="100%" />
 </p>
 
 <br/>
@@ -234,7 +226,7 @@
   <img src="https://media.giphy.com/media/iY8CRBdQXODJSCERIr/giphy.gif" width="28" />
 </h2>
 
-<!-- Using OFFICIAL github-readme-stats for pin cards -->
+<!-- Pin cards — direct API (renders on-the-fly) -->
 <p align="center">
   <a href="https://github.com/cyberkallan/-">
     <img width="49%" src="https://github-readme-stats.vercel.app/api/pin/?username=cyberkallan&repo=-&hide_border=true&border_radius=15&bg_color=0D1117&title_color=00D4FF&icon_color=A855F7&text_color=E2E8F0" alt="Pentesting Toolkit" />
@@ -324,5 +316,5 @@
 </p>
 
 <!-- ═══════════════════════════════════════════════════════════════════════════════════ -->
-<!-- ⚡ POWERED BY: GitHub Actions | github-readme-stats | capsule-render ⚡ -->
+<!-- ⚡ POWERED BY: GitHub Actions | capsule-render | streak-stats | skillicons ⚡ -->
 <!-- ═══════════════════════════════════════════════════════════════════════════════════ -->
