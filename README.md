@@ -4,7 +4,7 @@
 <!-- ═══════════════════════════════════════════════════════════════════════════════════ -->
 
 <!-- ╔══════════════════════════════════════════════════════════════╗ -->
-<!-- ║              🎬 VIDEO HEADER 🎬                              ║ -->
+<!-- ║               www.arjunarz.com                               ║ -->
 <!-- ╚══════════════════════════════════════════════════════════════╝ -->
 <p align="center">
   <video src="https://github.com/cyberkallan/cyberkallan/raw/main/VN20260304_233249.mp4" width="100%" autoplay loop muted playsinline></video>
@@ -30,7 +30,7 @@
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%" alt="divider" />
 
 <!-- ╔══════════════════════════════════════════════════════════════╗ -->
-<!-- ║                    💀 HACKER PROFILE 💀                      ║ -->
+<!-- ║                          💀 PROFILE 💀                      ║ -->
 <!-- ╚══════════════════════════════════════════════════════════════╝ -->
 
 <h2 align="center">
@@ -52,7 +52,7 @@
 ║   ╚═════╝╚═╝  ╚═╝    OS      : Kali Linux / Parrot OS          ║
 ║                       Shell   : zsh / bash                       ║
 ║                       Editor  : vim / VS Code                    ║
-║                       Website : arjunarz.com                     ║
+║                       Website : arjunarz.in                     ║
 ║                                                                  ║
 ╚══════════════════════════════════════════════════════════════════╝
 ```
@@ -182,7 +182,7 @@
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%" alt="divider" />
 
 <!-- ╔══════════════════════════════════════════════════════════════╗ -->
-<!-- ║              📈 3D CONTRIBUTION CALENDAR 📈                 ║ -->
+<!-- ║              📈 CONTRIBUTION CALENDAR 📈                    ║ -->
 <!-- ╚══════════════════════════════════════════════════════════════╝ -->
 
 <h2 align="center">
@@ -304,7 +304,7 @@
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%" alt="divider" />
 
 <!-- ╔══════════════════════════════════════════════════════════════╗ -->
-<!-- ║                    🔥 PREMIUM FOOTER 🔥                     ║ -->
+<!-- ║                    🔥 ARJUN ARZ 🔥                     ║ -->
 <!-- ╚══════════════════════════════════════════════════════════════╝ -->
 
 <p align="center">
