@@ -3,21 +3,16 @@
 <!-- ╚══════╝╚═╝   ╚═╝╚═════╝ ╚══════╝╚═╝  ╚═╝╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝╚══════╝╚═╝  ╚═╝╚═╝ ╚═══╝ -->
 <!-- ═══════════════════════════════════════════════════════════════════════════════════ -->
 
-<!-- ╔══════════════════════════════════════════════════════════════╗ -->
-<!-- ║              🎬 arjunarz.in 🎬                              ║ -->
-<!-- ╚══════════════════════════════════════════════════════════════╝ -->
-
-<!-- IMPORTANT: The raw repo MP4 might not auto-play due to GitHub security policies. 
-     For a guaranteed auto-playing video, replace this URL with a GitHub CDN link obtained by dragging the video into an Issue comment. -->
-<p align="center">
-  <video src="./VN20260304_233249.mp4" width="100%" autoplay loop muted playsinline></video>
-</p>
-
 <!-- ANIMATED TYPING HEADER -->
 <p align="center">
   <a href="https://github.com/cyberkallan">
     <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=28&duration=3000&pause=1000&color=00D4FF&center=true&vCenter=true&multiline=true&repeat=true&random=false&width=900&height=120&lines=%E2%9A%A1+Welcome+to+CyberKallan's+Digital+Fortress+%E2%9A%A1;%F0%9F%94%90+Cybersecurity+Analyst+%7C+Ethical+Hacker+%F0%9F%94%90;%F0%9F%8E%AF+Bug+Bounty+Hunter+%7C+Pentester+%F0%9F%8E%AF;%F0%9F%92%80+Turning+Vulnerabilities+Into+Knowledge+%F0%9F%92%80;%F0%9F%9B%A1%EF%B8%8F+Securing+the+Digital+World+%F0%9F%9B%A1%EF%B8%8F" alt="Typing SVG" />
   </a>
+</p>
+
+<!-- 🎬 PROFILE GIF 🎬 -->
+<p align="center">
+  <img src="./PROFILE2.gif" width="100%" alt="CyberKallan Profile Banner" />
 </p>
 
 <!-- PROFILE BADGES -->
@@ -33,7 +28,7 @@
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%" alt="divider" />
 
 <!-- ╔══════════════════════════════════════════════════════════════╗ -->
-<!-- ║                         💀  PROFILE 💀                      ║ -->
+<!-- ║                          💀 PROFILE 💀                      ║ -->
 <!-- ╚══════════════════════════════════════════════════════════════╝ -->
 
 <h2 align="center">
@@ -134,7 +129,7 @@
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%" alt="divider" />
 
 <!-- ╔══════════════════════════════════════════════════════════════╗ -->
-<!-- ║              📊 GITHUB STATS 📊                             ║ -->
+<!-- ║              📊 GITHUB STATS DASHBOARD 📊                   ║ -->
 <!-- ╚══════════════════════════════════════════════════════════════╝ -->
 
 <h2 align="center">
@@ -185,11 +180,11 @@
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%" alt="divider" />
 
 <!-- ╔══════════════════════════════════════════════════════════════╗ -->
-<!-- ║                 📈 CONTRIBUTION CALENDAR 📈                 ║ -->
+<!-- ║                📈  CONTRIBUTION CALENDAR 📈                 ║ -->
 <!-- ╚══════════════════════════════════════════════════════════════╝ -->
 
 <h2 align="center">
-  <samp>&nbsp;📈 3D CONTRIBUTION CALENDAR 📈&nbsp;</samp>
+  <samp>&nbsp;📈 CONTRIBUTION CALENDAR 📈&nbsp;</samp>
 </h2>
 
 <p align="center">
@@ -292,7 +287,7 @@
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%" alt="divider" />
 
 <!-- ╔══════════════════════════════════════════════════════════════╗ -->
-<!-- ║                    🔥 arjunarz.com 🔥                     ║ -->
+<!-- ║                    🔥 www.arjunarz.in 🔥                     ║ -->
 <!-- ╚══════════════════════════════════════════════════════════════╝ -->
 
 <p align="center">
