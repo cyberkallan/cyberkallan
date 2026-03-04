@@ -4,10 +4,13 @@
 <!-- ═══════════════════════════════════════════════════════════════════════════════════ -->
 
 <!-- ╔══════════════════════════════════════════════════════════════╗ -->
-<!-- ║               www.arjunarz.com                               ║ -->
+<!-- ║              🎬 arjunarz.in 🎬                              ║ -->
 <!-- ╚══════════════════════════════════════════════════════════════╝ -->
+
+<!-- IMPORTANT: The raw repo MP4 might not auto-play due to GitHub security policies. 
+     For a guaranteed auto-playing video, replace this URL with a GitHub CDN link obtained by dragging the video into an Issue comment. -->
 <p align="center">
-  <video src="https://github.com/cyberkallan/cyberkallan/raw/main/VN20260304_233249.mp4" width="100%" autoplay loop muted playsinline></video>
+  <video src="./VN20260304_233249.mp4" width="100%" autoplay loop muted playsinline></video>
 </p>
 
 <!-- ANIMATED TYPING HEADER -->
@@ -30,7 +33,7 @@
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%" alt="divider" />
 
 <!-- ╔══════════════════════════════════════════════════════════════╗ -->
-<!-- ║                          💀 PROFILE 💀                      ║ -->
+<!-- ║                         💀  PROFILE 💀                      ║ -->
 <!-- ╚══════════════════════════════════════════════════════════════╝ -->
 
 <h2 align="center">
@@ -52,7 +55,7 @@
 ║   ╚═════╝╚═╝  ╚═╝    OS      : Kali Linux / Parrot OS          ║
 ║                       Shell   : zsh / bash                       ║
 ║                       Editor  : vim / VS Code                    ║
-║                       Website : arjunarz.in                     ║
+║                       Website : arjunarz.com                     ║
 ║                                                                  ║
 ╚══════════════════════════════════════════════════════════════════╝
 ```
@@ -131,7 +134,7 @@
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%" alt="divider" />
 
 <!-- ╔══════════════════════════════════════════════════════════════╗ -->
-<!-- ║              📊 GITHUB STATS DASHBOARD 📊                   ║ -->
+<!-- ║              📊 GITHUB STATS 📊                             ║ -->
 <!-- ╚══════════════════════════════════════════════════════════════╝ -->
 
 <h2 align="center">
@@ -147,13 +150,13 @@
   </a>
 </p>
 
-<!-- GitHub Stats & Top Languages — direct API (renders on-the-fly) -->
+<!-- GitHub Stats & Top Languages — direct API (renders on-the-fly via fast instance) -->
 <p align="center">
   <a href="https://github.com/cyberkallan">
-    <img width="49%" src="https://github-readme-stats.vercel.app/api?username=cyberkallan&show_icons=true&hide_border=true&border_radius=15&bg_color=0D1117&title_color=00D4FF&icon_color=A855F7&text_color=E2E8F0&ring_color=00D4FF&count_private=true&include_all_commits=true" alt="GitHub Stats" />
+    <img width="49%" src="https://github-readme-stats-fast.vercel.app/api?username=cyberkallan&show_icons=true&hide_border=true&border_radius=15&bg_color=0D1117&title_color=00D4FF&icon_color=A855F7&text_color=E2E8F0&ring_color=00D4FF&count_private=true&include_all_commits=true" alt="GitHub Stats" />
   </a>
   <a href="https://github.com/cyberkallan">
-    <img width="41%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=cyberkallan&layout=compact&hide_border=true&border_radius=15&bg_color=0D1117&title_color=00D4FF&text_color=E2E8F0&langs_count=10" alt="Top Languages" />
+    <img width="41%" src="https://github-readme-stats-fast.vercel.app/api/top-langs/?username=cyberkallan&layout=compact&hide_border=true&border_radius=15&bg_color=0D1117&title_color=00D4FF&text_color=E2E8F0&langs_count=10" alt="Top Languages" />
   </a>
 </p>
 
@@ -182,7 +185,7 @@
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%" alt="divider" />
 
 <!-- ╔══════════════════════════════════════════════════════════════╗ -->
-<!-- ║              📈 CONTRIBUTION CALENDAR 📈                    ║ -->
+<!-- ║                 📈 CONTRIBUTION CALENDAR 📈                 ║ -->
 <!-- ╚══════════════════════════════════════════════════════════════╝ -->
 
 <h2 align="center">
@@ -199,22 +202,7 @@
 
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%" alt="divider" />
 
-<!-- ╔══════════════════════════════════════════════════════════════╗ -->
-<!-- ║              🏆 GITHUB TROPHIES 🏆                          ║ -->
-<!-- ╚══════════════════════════════════════════════════════════════╝ -->
 
-<h2 align="center">
-  <samp>&nbsp;🏆 GITHUB TROPHIES 🏆&nbsp;</samp>
-</h2>
-
-<!-- Trophies — direct API (renders on-the-fly) -->
-<p align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=cyberkallan&theme=algolia&no-frame=true&no-bg=true&column=7&margin-w=15&margin-h=15" alt="GitHub Trophies" width="100%" />
-</p>
-
-<br/>
-
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%" alt="divider" />
 
 <!-- ╔══════════════════════════════════════════════════════════════╗ -->
 <!-- ║              🔥 FEATURED PROJECTS 🔥                        ║ -->
@@ -226,22 +214,22 @@
   <img src="https://media.giphy.com/media/iY8CRBdQXODJSCERIr/giphy.gif" width="28" />
 </h2>
 
-<!-- Pin cards — direct API (renders on-the-fly) -->
+<!-- Pin cards — direct API (renders on-the-fly via fast instance) -->
 <p align="center">
   <a href="https://github.com/cyberkallan/-">
-    <img width="49%" src="https://github-readme-stats.vercel.app/api/pin/?username=cyberkallan&repo=-&hide_border=true&border_radius=15&bg_color=0D1117&title_color=00D4FF&icon_color=A855F7&text_color=E2E8F0" alt="Pentesting Toolkit" />
+    <img width="49%" src="https://github-readme-stats-fast.vercel.app/api/pin/?username=cyberkallan&repo=-&hide_border=true&border_radius=15&bg_color=0D1117&title_color=00D4FF&icon_color=A855F7&text_color=E2E8F0" alt="Pentesting Toolkit" />
   </a>
   <a href="https://github.com/cyberkallan/inshackle-bot">
-    <img width="49%" src="https://github-readme-stats.vercel.app/api/pin/?username=cyberkallan&repo=inshackle-bot&hide_border=true&border_radius=15&bg_color=0D1117&title_color=00D4FF&icon_color=A855F7&text_color=E2E8F0" alt="Inshackle Bot" />
+    <img width="49%" src="https://github-readme-stats-fast.vercel.app/api/pin/?username=cyberkallan&repo=inshackle-bot&hide_border=true&border_radius=15&bg_color=0D1117&title_color=00D4FF&icon_color=A855F7&text_color=E2E8F0" alt="Inshackle Bot" />
   </a>
 </p>
 
 <p align="center">
   <a href="https://github.com/cyberkallan/IG-blaster">
-    <img width="49%" src="https://github-readme-stats.vercel.app/api/pin/?username=cyberkallan&repo=IG-blaster&hide_border=true&border_radius=15&bg_color=0D1117&title_color=00D4FF&icon_color=A855F7&text_color=E2E8F0" alt="IG Blaster" />
+    <img width="49%" src="https://github-readme-stats-fast.vercel.app/api/pin/?username=cyberkallan&repo=IG-blaster&hide_border=true&border_radius=15&bg_color=0D1117&title_color=00D4FF&icon_color=A855F7&text_color=E2E8F0" alt="IG Blaster" />
   </a>
   <a href="https://github.com/cyberkallan/cyberkallan">
-    <img width="49%" src="https://github-readme-stats.vercel.app/api/pin/?username=cyberkallan&repo=cyberkallan&hide_border=true&border_radius=15&bg_color=0D1117&title_color=00D4FF&icon_color=A855F7&text_color=E2E8F0" alt="Profile Repo" />
+    <img width="49%" src="https://github-readme-stats-fast.vercel.app/api/pin/?username=cyberkallan&repo=cyberkallan&hide_border=true&border_radius=15&bg_color=0D1117&title_color=00D4FF&icon_color=A855F7&text_color=E2E8F0" alt="Profile Repo" />
   </a>
 </p>
 
@@ -304,7 +292,7 @@
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%" alt="divider" />
 
 <!-- ╔══════════════════════════════════════════════════════════════╗ -->
-<!-- ║                    🔥 ARJUN ARZ 🔥                     ║ -->
+<!-- ║                    🔥 arjunarz.com 🔥                     ║ -->
 <!-- ╚══════════════════════════════════════════════════════════════╝ -->
 
 <p align="center">
