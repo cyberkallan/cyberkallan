@@ -223,8 +223,8 @@
   <a href="https://github.com/cyberkallan/IG-blaster">
     <img width="49%" src="https://github-readme-stats-fast.vercel.app/api/pin/?username=cyberkallan&repo=IG-blaster&hide_border=true&border_radius=15&bg_color=0D1117&title_color=00D4FF&icon_color=A855F7&text_color=E2E8F0" alt="IG Blaster" />
   </a>
-  <a href="https://github.com/cyberkallan/clipboardme">
-    <img width="49%" src="https://github-readme-stats-fast.vercel.app/api/pin/?username=cyberkallan&repo=clipboardme&hide_border=true&border_radius=15&bg_color=0D1117&title_color=00D4FF&icon_color=A855F7&text_color=E2E8F0" alt="Profile Repo" />
+  <a href="https://github.com/cyberkallan/choicebot">
+    <img width="49%" src="https://github-readme-stats-fast.vercel.app/api/pin/?username=cyberkallan&repo=choicebot&hide_border=true&border_radius=15&bg_color=0D1117&title_color=00D4FF&icon_color=A855F7&text_color=E2E8F0" alt="Profile Repo" />
   </a>
 </p>
 
@@ -301,5 +301,6 @@
 <!-- ═══════════════════════════════════════════════════════════════════════════════════ -->
 <!-- ⚡ POWERED BY: GitHub Actions | capsule-render | streak-stats | skillicons ⚡ -->
 <!-- ═══════════════════════════════════════════════════════════════════════════════════ -->
+
 
 
