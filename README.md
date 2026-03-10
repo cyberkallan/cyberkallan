@@ -211,8 +211,8 @@
 
 <!-- Pin cards — direct API (renders on-the-fly via fast instance) -->
 <p align="center">
-  <a href="https://github.com/cyberkallan/-">
-    <img width="49%" src="https://github-readme-stats-fast.vercel.app/api/pin/?username=cyberkallan&repo=-&hide_border=true&border_radius=15&bg_color=0D1117&title_color=00D4FF&icon_color=A855F7&text_color=E2E8F0" alt="Pentesting Toolkit" />
+  <a href="https://github.com/cyberkallan/hexmind">
+    <img width="49%" src="https://github-readme-stats-fast.vercel.app/api/pin/?username=cyberkallan&repo=hexmind&hide_border=true&border_radius=15&bg_color=0D1117&title_color=00D4FF&icon_color=A855F7&text_color=E2E8F0" alt="Pentesting Toolkit" />
   </a>
   <a href="https://github.com/cyberkallan/inshackle-bot">
     <img width="49%" src="https://github-readme-stats-fast.vercel.app/api/pin/?username=cyberkallan&repo=inshackle-bot&hide_border=true&border_radius=15&bg_color=0D1117&title_color=00D4FF&icon_color=A855F7&text_color=E2E8F0" alt="Inshackle Bot" />
@@ -301,3 +301,4 @@
 <!-- ═══════════════════════════════════════════════════════════════════════════════════ -->
 <!-- ⚡ POWERED BY: GitHub Actions | capsule-render | streak-stats | skillicons ⚡ -->
 <!-- ═══════════════════════════════════════════════════════════════════════════════════ -->
+
