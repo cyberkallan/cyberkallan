@@ -16,6 +16,13 @@
 #include "led_controller.h"
 
 // ---------------------------------------------------------------------------
+// Global Battery State (updated by NeoCAT_v1.ino loop)
+// ---------------------------------------------------------------------------
+extern float g_batteryVoltage;
+extern int   g_batteryPercent;
+extern bool  g_isCharging;
+
+// ---------------------------------------------------------------------------
 // Global WebSocket reference (shared with other modules for push messages)
 // ---------------------------------------------------------------------------
 extern AsyncWebSocket ws;
@@ -37,6 +44,11 @@ void setupTerminalRoutes(AsyncWebServer& server);
  * @brief Wire all chat HTTP routes and /chat-ws WebSocket onto `server`.
  */
 void setupChatRoutes(AsyncWebServer& server);
+
+/**
+ * @brief Wire clone AP HTTP routes and captive portal onto `server`.
+ */
+void setupCloneRoutes(AsyncWebServer& server);
 
 /**
  * @brief Push a plain-text message to every connected WebSocket client.
@@ -61,3 +73,15 @@ void handleChatSwitch();
  * @brief Check if the device is currently in chat mode
  */
 bool isChatMode();
+
+/**
+ * @brief Handle deferred WiFi AP switching for Clone Mode
+ *
+ * Must be called in loop()
+ */
+void handleCloneSwitch();
+
+/**
+ * @brief Check if the device is currently in clone AP mode
+ */
+bool isCloneMode();

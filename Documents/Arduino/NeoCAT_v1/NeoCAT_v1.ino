@@ -43,6 +43,19 @@ static const IPAddress AP_MASK(255, 255, 255, 0);
 static const uint16_t DNS_PORT    = 53;
 static const uint16_t HTTP_PORT   = 80;
 
+// =========================== Battery Config =================================
+static const uint8_t BATTERY_ADC_PIN = 0;  // GPIO0 (A0) on PCBCupid Glyph S3
+// ESP32 ADC is 12-bit (0-4095). Reference voltage is 3.3V, but it usually
+// measures up to ~3.1V without attenuation.
+// Assuming a standard voltage divider (e.g. 100k/100k -> 0.5 ratio):
+// Vbat = (adc_val / 4095.0) * 3.3 * 2.0
+// We'll use a calibration multiplier. Adjust if needed.
+static const float ADC_MULTIPLIER = 0.00171f; // (3.3 / 4095) * 2.12 (approx calibration)
+
+float g_batteryVoltage = 0.0f;
+int   g_batteryPercent = 0;
+bool  g_isCharging     = false;
+
 // =========================== Global Objects =================================
 DNSServer       dnsServer;
 AsyncWebServer  server(HTTP_PORT);
@@ -59,6 +72,7 @@ static TaskHandle_t coreTaskHandle  = NULL;
 // Forward declarations for FreeRTOS tasks
 void ledTask(void* pvParameters);
 void coreLoopTask(void* pvParameters);
+void updateBatteryStatus();
 
 // ============================================================================
 //  LED Animation Task — Runs on Core 0 to keep animations smooth
@@ -185,11 +199,21 @@ void setup() {
   termMod.begin(&wifiMod, &bleMod, &ledCtrl);
   setupTerminalRoutes(server);
 
+  // ---------- Chat Routes ----------
+  Serial.println(F("[INIT] Chat routes & WebSocket..."));
+  setupChatRoutes(server);
+
+  // ---------- Clone AP Routes ----------
+  Serial.println(F("[INIT] Clone AP routes..."));
+  setupCloneRoutes(server);
+
   // ---------- Start Services ----------
 
   // Handle captive portal detection endpoints
   server.onNotFound([](AsyncWebServerRequest* request) {
-    if (isChatMode()) {
+    if (isCloneMode()) {
+      request->redirect("http://192.168.4.1/portal");
+    } else if (isChatMode()) {
       request->redirect("http://192.168.4.1/chat");
     } else {
       // Redirect all unknown requests to root (captive portal)
@@ -261,6 +285,12 @@ void loop() {
   // Handle deferred chat mode AP switches
   handleChatSwitch();
 
+  // Handle deferred clone mode AP switches
+  handleCloneSwitch();
+
+  // Update battery telemetry
+  updateBatteryStatus();
+
   // Periodic status broadcast over WebSocket (uses broadcastStatus from web_server.h)
   broadcastStatus();
 
@@ -277,6 +307,39 @@ void loop() {
 
   // Small yield
   delay(5);
+}
+
+// ============================================================================
+//  BATTERY MONITORING TASK (runs periodically in loop)
+// ============================================================================
+void updateBatteryStatus() {
+  static unsigned long lastBatteryRead = 0;
+  if (millis() - lastBatteryRead > 2000) {  // Update every 2 seconds
+    lastBatteryRead = millis();
+    
+    // Read raw ADC (take average of 5 samples for stability)
+    uint32_t adcSum = 0;
+    for (int i = 0; i < 5; i++) {
+      adcSum += analogRead(BATTERY_ADC_PIN);
+      delay(2);
+    }
+    float avgAdc = adcSum / 5.0f;
+    
+    // Calculate Voltage
+    g_batteryVoltage = avgAdc * ADC_MULTIPLIER;
+    
+    // Determine charging status (approximate based on voltage threshold)
+    g_isCharging = (g_batteryVoltage >= 4.25f);
+    
+    // Calculate Percentage (LiPo standard: 3.2V = 0%, 4.2V = 100%)
+    if (g_batteryVoltage >= 4.20f) {
+      g_batteryPercent = 100;
+    } else if (g_batteryVoltage <= 3.20f) {
+      g_batteryPercent = 0;
+    } else {
+      g_batteryPercent = (int)(((g_batteryVoltage - 3.2f) / (4.2f - 3.2f)) * 100.0f);
+    }
+  }
 }
 
 // ============================================================================

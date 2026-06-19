@@ -15,6 +15,7 @@
 #include "config_manager.h"
 #include "chat_system.h"
 #include "chat_ui.h"
+#include "captive_portal.h"
 
 // ── module pointers (set once in setupWebServer) ─────────────────────────
 static WiFiModule*     _wifi = nullptr;
@@ -31,6 +32,16 @@ static volatile bool _chatStopPending = false;
 static bool _chatModeActive = false;
 
 bool isChatMode() { return _chatModeActive; }
+
+// ── Clone AP mode state ─────────────────────────────────────────────
+static volatile bool _cloneStartPending = false;
+static volatile bool _cloneStopPending  = false;
+static bool _cloneModeActive = false;
+static String _cloneSSID = "";
+static uint8_t _cloneTemplate = 0;  // 0=prank, 1=hacker, 2=funny
+static String _cloneTitle = "";
+
+bool isCloneMode() { return _cloneModeActive; }
 
 // ── CORS helper ──────────────────────────────────────────────────────────
 static void addCorsHeaders(AsyncWebServerResponse* r) {
@@ -127,10 +138,18 @@ void setupWebServer(AsyncWebServer& server, AsyncWebSocket& wsock,
     //  CAPTIVE-PORTAL REDIRECTS
     // ══════════════════════════════════════════════════════════════════════
 
-    // Main dashboard (served from PROGMEM)
+    // Main dashboard (or captive portal in clone mode)
     server.on("/", HTTP_GET, [](AsyncWebServerRequest* req) {
-        AsyncWebServerResponse* r =
-            req->beginResponse_P(200, "text/html", (const uint8_t*)DASHBOARD_HTML, strlen_P(DASHBOARD_HTML));
+        const uint8_t* html;
+        size_t len;
+        if (_cloneModeActive) {
+            html = (const uint8_t*)CAPTIVE_PORTAL_HTML;
+            len  = strlen_P(CAPTIVE_PORTAL_HTML);
+        } else {
+            html = (const uint8_t*)DASHBOARD_HTML;
+            len  = strlen_P(DASHBOARD_HTML);
+        }
+        AsyncWebServerResponse* r = req->beginResponse_P(200, "text/html", html, len);
         addCorsHeaders(r);
         req->send(r);
     });
@@ -393,6 +412,31 @@ void setupWebServer(AsyncWebServer& server, AsyncWebSocket& wsock,
     });
 
     // ══════════════════════════════════════════════════════════════════════
+    //  TERMINAL API
+    // ══════════════════════════════════════════════════════════════════════
+    AsyncCallbackJsonWebHandler* termHandler =
+        new AsyncCallbackJsonWebHandler("/api/term",
+            [](AsyncWebServerRequest* req, JsonVariant& json) {
+                String cmd = json["cmd"].as<String>();
+                cmd.trim();
+                
+                String output = "";
+                if (cmd == "ping") {
+                    output = "pong! System is alive.";
+                } else {
+                    output = "Unknown command: " + cmd + "\nType 'help' for local commands.";
+                }
+                
+                JsonDocument doc;
+                doc["output"] = output;
+                String res;
+                serializeJson(doc, res);
+                sendJson(req, 200, res);
+            });
+    termHandler->setMethod(HTTP_POST);
+    server.addHandler(termHandler);
+
+    // ══════════════════════════════════════════════════════════════════════
     //  404 catch-all → captive-portal redirect
     // ══════════════════════════════════════════════════════════════════════
     server.onNotFound(redirectToDashboard);
@@ -428,6 +472,11 @@ void broadcastStatus() {
     doc["cpuTemp"]  = temperatureRead();
 #endif
     doc["cpuFreq"]  = ESP.getCpuFreqMHz();
+
+    // Battery telemetry
+    doc["batteryPercent"] = g_batteryPercent;
+    doc["batteryVoltage"] = g_batteryVoltage;
+    doc["isCharging"]     = g_isCharging;
 
     // Chat status
     doc["chatActive"]  = chatSys.isRoomActive();
@@ -792,3 +841,127 @@ void setupChatRoutes(AsyncWebServer& server) {
     });
 }
 
+// ══════════════════════════════════════════════════════════════════════════
+//  CLONE AP MODE — Evil Twin Captive Portal
+// ══════════════════════════════════════════════════════════════════════════
+
+void handleCloneSwitch() {
+    if (_cloneStartPending) {
+        _cloneStartPending = false;
+        _cloneModeActive = true;
+
+        Serial.printf("\n[CLONE] Starting clone AP: %s\n", _cloneSSID.c_str());
+        WiFi.softAPdisconnect(true);
+        delay(500);
+        WiFi.softAP(_cloneSSID.c_str(), NULL, 1, 0, 8);  // Open AP, no password
+
+        Serial.printf("[CLONE] AP active — SSID: %s, Template: %d\n", _cloneSSID.c_str(), _cloneTemplate);
+    }
+
+    if (_cloneStopPending) {
+        _cloneStopPending = false;
+        _cloneModeActive = false;
+
+        Serial.println("\n[CLONE] Stopping clone AP, reverting...");
+
+        String ssid = config.getSSID();
+        String pass = config.getPassword();
+        const char* passCstr = pass.length() > 0 ? pass.c_str() : NULL;
+
+        WiFi.softAPdisconnect(true);
+        delay(500);
+        WiFi.softAP(ssid.c_str(), passCstr, 1, 0, 8);
+
+        Serial.printf("[CLONE] AP reverted to: %s\n", ssid.c_str());
+    }
+}
+
+void setupCloneRoutes(AsyncWebServer& server) {
+
+    // ── Captive portal page (served when clone mode is active) ────────
+    server.on("/portal", HTTP_GET, [](AsyncWebServerRequest* req) {
+        AsyncWebServerResponse* r =
+            req->beginResponse_P(200, "text/html", (const uint8_t*)CAPTIVE_PORTAL_HTML, strlen_P(CAPTIVE_PORTAL_HTML));
+        addCorsHeaders(r);
+        req->send(r);
+    });
+
+    // ── GET /api/clone/info — Captive page fetches this for config ────
+    server.on("/api/clone/info", HTTP_GET, [](AsyncWebServerRequest* req) {
+        JsonDocument doc;
+        doc["template"] = _cloneTemplate;
+        doc["title"]    = _cloneTitle;
+        doc["ssid"]     = _cloneSSID;
+        doc["active"]   = _cloneModeActive;
+        String out;
+        serializeJson(doc, out);
+        sendJson(req, 200, out);
+    });
+
+    // ── POST /api/wifi/clone — Start clone AP ─────────────────────────
+    AsyncCallbackJsonWebHandler* cloneHandler = new AsyncCallbackJsonWebHandler(
+        "/api/wifi/clone",
+        [](AsyncWebServerRequest* req, JsonVariant& json) {
+            if (_cloneModeActive) {
+                sendJson(req, 400, "{\"error\":\"clone already active\"}");
+                return;
+            }
+
+            JsonObject obj = json.as<JsonObject>();
+
+            // Get SSID — either from scan index or direct string
+            if (obj.containsKey("scanIndex") && _wifi) {
+                int idx = obj["scanIndex"].as<int>();
+                const ScanResult* sr = _wifi->getScanResult(idx);
+                if (!sr) {
+                    sendJson(req, 400, "{\"error\":\"invalid scan index\"}");
+                    return;
+                }
+                _cloneSSID = sr->ssid;
+            } else if (obj.containsKey("ssid")) {
+                _cloneSSID = obj["ssid"].as<String>();
+            } else {
+                sendJson(req, 400, "{\"error\":\"missing ssid or scanIndex\"}");
+                return;
+            }
+
+            _cloneTemplate = obj["template"] | 0;
+            if (_cloneTemplate > 2) _cloneTemplate = 0;
+
+            _cloneTitle = obj["title"] | "Welcome";
+            if (_cloneTitle.length() > 64) _cloneTitle = _cloneTitle.substring(0, 64);
+
+            _cloneStartPending = true;  // Deferred — handled in handleCloneSwitch()
+
+            JsonDocument resp;
+            resp["status"]   = "starting";
+            resp["ssid"]     = _cloneSSID;
+            resp["template"] = _cloneTemplate;
+            resp["title"]    = _cloneTitle;
+            String out;
+            serializeJson(resp, out);
+            sendJson(req, 200, out);
+        });
+    cloneHandler->setMethod(HTTP_POST);
+    server.addHandler(cloneHandler);
+
+    // ── POST /api/wifi/clone/stop — Stop clone AP ─────────────────────
+    server.on("/api/wifi/clone/stop", HTTP_POST, [](AsyncWebServerRequest* req) {
+        if (!_cloneModeActive) {
+            sendJson(req, 400, "{\"error\":\"clone not active\"}");
+            return;
+        }
+        _cloneStopPending = true;  // Deferred
+        sendJson(req, 200, "{\"status\":\"stopping\"}");
+    });
+
+    // ── Dashboard access during clone mode ────────────────────────────
+    server.on("/dashboard", HTTP_GET, [](AsyncWebServerRequest* req) {
+        AsyncWebServerResponse* r =
+            req->beginResponse_P(200, "text/html", (const uint8_t*)DASHBOARD_HTML, strlen_P(DASHBOARD_HTML));
+        addCorsHeaders(r);
+        req->send(r);
+    });
+
+    Serial.println(F("[HTTP] Clone AP routes registered"));
+}

@@ -22,7 +22,7 @@ const char PWA_MANIFEST[] PROGMEM = R"json({
   "theme_color":"#050505",
   "categories":["utilities","security"],
   "icons":[
-    {"src":"data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect fill='%23050505' width='100' height='100' rx='20'/><text x='50' y='62' text-anchor='middle' font-size='52'>🐱</text></svg>","sizes":"any","type":"image/svg+xml"}
+    {"src":"data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect fill='%23050505' width='100' height='100' rx='15'/><g stroke='%2300ff41' stroke-width='3' stroke-linejoin='round' stroke-linecap='round' fill='none'><path d='M 50 90 L 20 45 L 15 10 L 40 25 L 50 20 L 60 25 L 85 10 L 80 45 Z'/><path d='M 20 45 L 50 70 L 80 45'/><path d='M 40 25 L 50 50 L 60 25'/><path d='M 32 42 L 44 48' stroke-width='4'/><path d='M 68 42 L 56 48' stroke-width='4'/></g></svg>","sizes":"any","type":"image/svg+xml"}
   ]
 })json";
 
@@ -40,7 +40,7 @@ const char DASHBOARD_HTML[] PROGMEM = R"rawliteral(
 <meta name="apple-mobile-web-app-title" content="NeoCAT">
 <meta name="application-name" content="NeoCAT V1">
 <link rel="manifest" href="/manifest.json">
-<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🐱</text></svg>">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100' stroke='%2300ff41' stroke-width='3' stroke-linejoin='round' stroke-linecap='round' fill='none'><path d='M 50 90 L 20 45 L 15 10 L 40 25 L 50 20 L 60 25 L 85 10 L 80 45 Z'/><path d='M 20 45 L 50 70 L 80 45'/><path d='M 40 25 L 50 50 L 60 25'/><path d='M 32 42 L 44 48' stroke-width='4'/><path d='M 68 42 L 56 48' stroke-width='4'/></svg>">
 <title>NeoCAT V1</title>
 <style>
 /* ═══════════════════════════════════════════════════════════════════
@@ -102,13 +102,11 @@ input,textarea,select{font-family:inherit;outline:none}
 #boot.done{opacity:0;filter:blur(8px);pointer-events:none}
 .b-particles{position:absolute;inset:0;overflow:hidden;opacity:.15}
 .b-p{position:absolute;width:1px;background:var(--g);border-radius:1px;animation:matrixFade linear infinite;opacity:0}
-.b-icon{font-size:4rem;animation:bootPulse 1.4s ease-in-out infinite alternate;z-index:1}
-.b-brand{font-size:2.2rem;font-weight:900;letter-spacing:6px;margin-top:.8rem;z-index:1;
-  background:linear-gradient(135deg,var(--g),var(--cyan),var(--g));background-size:200% 200%;
-  -webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;
-  animation:gradientShift 3s ease infinite}
-.b-sub{font-size:.65rem;color:var(--dim);letter-spacing:4px;margin-top:6px;text-transform:uppercase;z-index:1}
-.b-powered{font-size:.55rem;color:var(--dim2);letter-spacing:2px;margin-top:2px;z-index:1}
+.b-icon{animation:bootPulse 1.4s ease-in-out infinite alternate;z-index:1;filter:drop-shadow(0 0 15px rgba(0,255,65,0.4))}
+.b-brand{font-size:2.4rem;font-weight:200;letter-spacing:14px;margin-top:.8rem;z-index:1;
+  color:#fff;text-shadow:0 0 20px rgba(255,255,255,0.3);text-transform:uppercase;margin-left:14px}
+.b-sub{font-size:.65rem;color:var(--g);letter-spacing:8px;margin-top:6px;text-transform:uppercase;z-index:1;font-weight:400}
+.b-powered{font-size:.5rem;color:var(--dim);letter-spacing:5px;margin-top:10px;text-transform:uppercase;z-index:1}
 .b-log{width:260px;margin-top:1.5rem;font-family:var(--mono);font-size:.58rem;color:var(--g2);line-height:1.9;min-height:80px;max-height:80px;overflow:hidden;z-index:1}
 .b-progress{width:220px;height:3px;background:var(--s2);border-radius:2px;margin-top:1rem;overflow:hidden;z-index:1}
 .b-bar{height:100%;width:0;background:linear-gradient(90deg,var(--g),var(--cyan));box-shadow:0 0 12px var(--g5);border-radius:2px;transition:width .2s var(--ease)}
@@ -150,8 +148,9 @@ input,textarea,select{font-family:inherit;outline:none}
 .tb-left{display:flex;align-items:center;gap:10px}
 .tb-dot{width:8px;height:8px;border-radius:50%;background:var(--dim2);transition:all .5s var(--ease)}
 .tb-dot.on{background:var(--g);box-shadow:0 0 12px var(--g5);animation:breathe 3s ease-in-out infinite}
-.tb-brand{font-family:var(--mono);font-weight:800;font-size:.85rem;letter-spacing:1.5px;
-  background:linear-gradient(135deg,var(--g),var(--cyan));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.tb-brand{font-family:var(--font);font-weight:300;font-size:1.05rem;letter-spacing:4px;text-transform:uppercase;
+  background:linear-gradient(135deg,var(--w),var(--g),var(--w));background-size:200% 200%;
+  -webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;animation:gradientShift 3s ease infinite}
 .tb-right{display:flex;align-items:center;gap:8px}
 .tb-chip{font-family:var(--mono);font-size:.55rem;color:var(--dim);padding:4px 10px;background:var(--s2);border:1px solid var(--b1);border-radius:20px;letter-spacing:.5px}
 .tb-status{font-size:.55rem;color:var(--dim2);font-family:var(--mono);letter-spacing:.5px}
@@ -379,12 +378,15 @@ input[type="color"]{width:36px;height:36px;border:none;border-radius:var(--rs);b
 }
 
 /* About card */
-.about{text-align:center;padding:20px;margin-top:14px}
-.about-logo{font-size:2.2rem;margin-bottom:6px}
-.about-name{font-size:1.1rem;font-weight:900;letter-spacing:3px;font-family:var(--mono);
-  background:linear-gradient(135deg,var(--g),var(--cyan));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
-.about-powered{font-size:.6rem;color:var(--dim);margin-top:4px;letter-spacing:1.5px}
-.about-legal{font-size:.52rem;color:var(--dim2);margin-top:6px;line-height:1.6}
+.about{text-align:center;padding:60px 20px;margin-top:14px;background:#020202;border:1px solid #111;position:relative;overflow:hidden;border-radius:var(--r)}
+.about-bg-flare{position:absolute;top:-50%;left:50%;transform:translateX(-50%);width:200%;height:100%;background:radial-gradient(ellipse at top,rgba(0,255,65,.12) 0%,transparent 60%);pointer-events:none}
+.about-logo-wrap{display:flex;justify-content:center;margin-bottom:25px;position:relative;z-index:1}
+.about-name{font-size:2rem;font-weight:200;letter-spacing:14px;color:#fff;text-shadow:0 0 20px rgba(255,255,255,.2);margin-left:14px;position:relative;z-index:1;text-transform:uppercase}
+.about-powered{color:var(--dim);font-size:.5rem;margin:15px 0 35px;font-weight:400;letter-spacing:8px;text-transform:uppercase;position:relative;z-index:1}
+.about-divider{width:1px;height:40px;background:linear-gradient(to bottom,var(--g),transparent);margin:0 auto 30px;position:relative;z-index:1}
+.about-role{font-size:.45rem;color:var(--dim2);text-transform:uppercase;letter-spacing:6px;margin-bottom:12px;position:relative;z-index:1}
+.about-author{font-size:1.1rem;color:#fff;font-weight:300;letter-spacing:8px;margin-bottom:40px;position:relative;z-index:1;text-shadow:0 0 10px rgba(255,255,255,.2)}
+.about-legal{font-size:.55rem;color:#333;letter-spacing:2px;margin-top:20px;position:relative;z-index:1}
 
 @media(min-width:600px){
   main{padding:20px 24px}
@@ -398,10 +400,18 @@ input[type="color"]{width:36px;height:36px;border:none;border-radius:var(--rs);b
 <!-- ══ BOOT SCREEN ══ -->
 <div id="boot">
   <div class="b-particles" id="b-particles"></div>
-  <div class="b-icon">&#x1F431;</div>
+  <div class="b-icon">
+    <svg width="72" height="72" viewBox="0 0 100 100" fill="none" stroke="var(--g)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="filter:drop-shadow(0 0 15px rgba(0,255,65,0.6));">
+      <path d="M 50 90 L 20 45 L 15 10 L 40 25 L 50 20 L 60 25 L 85 10 L 80 45 Z"/>
+      <path d="M 20 45 L 50 70 L 80 45"/>
+      <path d="M 40 25 L 50 50 L 60 25"/>
+      <path d="M 32 42 L 44 48" stroke-width="4"/>
+      <path d="M 68 42 L 56 48" stroke-width="4"/>
+    </svg>
+  </div>
   <div class="b-brand">NEOCAT</div>
   <div class="b-sub">Security Toolkit</div>
-  <div class="b-powered">Powered by Glyph S3</div>
+  <div class="b-powered">Powered by Glyph S3 &times; Hexlabs</div>
   <div class="b-log" id="b-log"></div>
   <div class="b-progress"><div class="b-bar" id="b-bar"></div></div>
   <div class="b-ver">V1.0.0 &bull; ESP32-S3</div>
@@ -433,9 +443,9 @@ input[type="color"]{width:36px;height:36px;border:none;border-radius:var(--rs);b
 <header class="topbar">
   <div class="tb-left">
     <div class="tb-dot" id="conn-dot"></div>
-    <span class="tb-brand" style="display:flex;align-items:center;gap:8px;">
-      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--g)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
-      CYBERKALLAN
+    <span class="tb-brand" style="display:flex;align-items:center;gap:10px;">
+      <svg width="22" height="22" viewBox="0 0 100 100" fill="none" stroke="url(#navGrad)" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" style="filter:drop-shadow(0 0 5px rgba(0,255,65,0.5));"><defs><linearGradient id="navGrad" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#00ff41"/><stop offset="100%" stop-color="#00e5ff"/></linearGradient></defs><path d="M 50 90 L 20 45 L 15 10 L 40 25 L 50 20 L 60 25 L 85 10 L 80 45 Z"/><path d="M 20 45 L 50 70 L 80 45"/><path d="M 40 25 L 50 50 L 60 25"/><path d="M 32 42 L 44 48" stroke-width="5"/><path d="M 68 42 L 56 48" stroke-width="5"/></svg>
+      NEOCAT V1
     </span>
   </div>
   <div class="tb-right">
@@ -520,6 +530,29 @@ input[type="color"]{width:36px;height:36px;border:none;border-radius:var(--rs);b
     </div>
   </div>
   <button class="btn btn-d btn-f" id="btn-wifi-stop" onclick="stopWifiAttack()" style="display:none"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><line x1="9" y1="9" x2="15" y2="15"/><line x1="15" y1="9" x2="9" y2="15"/></svg> Stop All</button>
+
+  <div class="sec">Clone AP</div>
+  <div class="card" id="clone-card">
+    <div class="card-title"><span class="dot" style="background:var(--orange)"></span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="margin-right:8px;vertical-align:-3px"><path d="M16 17l5-5-5-5"/><path d="M21 12H9"/><path d="M3 6v14a2 2 0 0 0 2 2h14"/></svg>Clone Selected Network</div>
+    <div id="clone-info" style="font-size:.68rem;color:var(--dim);font-family:var(--mono);padding:6px 0;margin-bottom:8px">Select a network above first</div>
+    <div style="display:flex;flex-direction:column;gap:10px">
+      <select class="inp" id="clone-template" style="padding:10px">
+        <option value="0">🎭 Prank — "You've been pranked!"</option>
+        <option value="1">💀 Hacker Mode — Matrix style</option>
+        <option value="2">🤣 Funny — Rick Roll</option>
+      </select>
+      <input type="text" class="inp" id="clone-title" placeholder="Custom title text (optional)" maxlength="64">
+      <div class="btn-grp">
+        <button class="btn btn-a btn-s" id="btn-clone-start" onclick="startCloneAP()"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 17l5-5-5-5"/><path d="M21 12H9"/><path d="M3 6v14a2 2 0 0 0 2 2h14"/></svg> Clone & Start</button>
+        <button class="btn btn-d btn-s" id="btn-clone-stop" onclick="stopCloneAP()" style="display:none"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><line x1="9" y1="9" x2="15" y2="15"/><line x1="15" y1="9" x2="9" y2="15"/></svg> Stop Clone</button>
+      </div>
+    </div>
+    <div id="clone-status" style="display:none;margin-top:12px;padding:12px;background:rgba(255,152,0,.08);border:1px solid rgba(255,152,0,.2);border-radius:var(--r);font-size:.7rem;color:var(--orange);font-family:var(--mono)">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="vertical-align:-2px;margin-right:6px"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+      Clone AP active — <span id="clone-ssid-label"></span><br>
+      <span style="font-size:.6rem;opacity:.7">Admin: go to <a href="/dashboard" style="color:var(--g)">192.168.4.1/dashboard</a></span>
+    </div>
+  </div>
 </section>
 
 <!-- ── BLE ────────────────────────────────────────────── -->
@@ -556,28 +589,39 @@ input[type="color"]{width:36px;height:36px;border:none;border-radius:var(--rs);b
 
 <!-- ── SETTINGS ──────────────────────────────────────── -->
 <section id="tab-settings" class="tab-content">
-  <div class="card"><div class="card-title"><span class="dot"></span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="margin-right:8px;vertical-align:-3px"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg> CATroom Chat</div><div style="display:flex;flex-direction:column;gap:10px"><input type="text" class="inp" id="chat-name" placeholder="Room Name" value="CATroom"><input type="text" class="inp" id="chat-pass" placeholder="Room Password (optional)"><div id="chat-status" style="font-size:.68rem;color:var(--dim);font-family:var(--mono);padding:6px 0">Room: Inactive</div><div class="btn-grp"><button class="btn btn-p btn-s" id="btn-chat-start" onclick="startChatRoom()"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"/><path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"/><path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"/><path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"/></svg> Start Room</button><button class="btn btn-d btn-s" id="btn-chat-stop" onclick="stopChatRoom()" style="display:none"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><line x1="9" y1="9" x2="15" y2="15"/><line x1="15" y1="9" x2="9" y2="15"/></svg> Stop Room</button></div></div></div>
-  <div class="card"><div class="card-title"><span class="dot"></span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="margin-right:8px;vertical-align:-3px"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg> System Health</div><div style="font-size:.72rem;line-height:2.2;color:var(--dim)"><div>CPU Temp <span style="float:right;color:var(--w);font-family:var(--mono)" id="sh-temp">--</span></div><div>CPU Freq <span style="float:right;color:var(--w);font-family:var(--mono)" id="sh-freq">--</span></div><div>Free RAM <span style="float:right;color:var(--w);font-family:var(--mono)" id="sh-ram">--</span></div><div>Chat Room <span style="float:right;font-family:var(--mono)" id="sh-chat" style="color:var(--dim2)">Inactive</span></div><div>Chat Users <span style="float:right;color:var(--w);font-family:var(--mono)" id="sh-chatusers">0</span></div></div></div>
+  <div class="card"><div class="card-title"><span class="dot"></span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="margin-right:8px;vertical-align:-3px"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg> CATroom Chat</div><div style="display:flex;flex-direction:column;gap:10px"><input type="text" class="inp" id="chat-name" placeholder="Room Name" value="CATroom"><input type="text" class="inp" id="chat-pass" placeholder="Room Password (optional)"><div id="chat-status" style="font-size:.68rem;color:var(--dim);font-family:var(--mono);padding:6px 0">Room: Inactive</div><div class="btn-grp"><button class="btn btn-p btn-s" id="btn-chat-start" onclick="startChatRoom()"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"/><path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"/><path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"/><path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"/></svg> Start Room</button><button class="btn btn-d btn-s" id="btn-chat-stop" onclick="stopChatRoom()" style="display:none"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><line x1="9" y1="9" x2="15" y2="15"/><line x1="15" y1="9" x2="9" y2="15"/></svg> Stop Room</button></div><button class="btn btn-p btn-f" onclick="window.open('/chat','_blank')" style="margin-top:5px;background:var(--s3)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="margin-right:6px"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg> Open Chat UI</button></div></div>
+  <div class="card"><div class="card-title"><span class="dot"></span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="margin-right:8px;vertical-align:-3px"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg> System Health</div><div style="font-size:.72rem;line-height:2.2;color:var(--dim)"><div>Battery <span style="float:right;color:var(--w);font-family:var(--mono)" id="sh-bat">--</span></div><div>CPU Temp <span style="float:right;color:var(--w);font-family:var(--mono)" id="sh-temp">--</span></div><div>CPU Freq <span style="float:right;color:var(--w);font-family:var(--mono)" id="sh-freq">--</span></div><div>Free RAM <span style="float:right;color:var(--w);font-family:var(--mono)" id="sh-ram">--</span></div><div>Chat Room <span style="float:right;font-family:var(--mono)" id="sh-chat" style="color:var(--dim2)">Inactive</span></div><div>Chat Users <span style="float:right;color:var(--w);font-family:var(--mono)" id="sh-chatusers">0</span></div></div></div>
   <div class="card"><div class="card-title"><span class="dot"></span>LED Control</div><select class="inp" id="led-mode" onchange="setLedMode(this.value)" style="margin-bottom:10px"><option value="idle">Idle</option><option value="scanning">Scanning</option><option value="attacking">Attacking</option><option value="off">Off</option><option value="custom">Custom Color</option></select><div class="clr-row" id="custom-color-row" style="display:none"><input type="color" id="led-color" value="#00ff41" onchange="setLedColor(this.value)"><div class="clr-prev" id="color-preview" style="background:#00ff41"></div><span style="font-size:.68rem;color:var(--dim);font-family:var(--mono)" id="color-hex">#00ff41</span></div></div>
   <div class="card"><div class="card-title"><span class="dot"></span>Device Config</div><div style="display:flex;flex-direction:column;gap:10px"><input type="text" class="inp" id="cfg-ssid" placeholder="WiFi Name (SSID)"><input type="text" class="inp" id="cfg-pass" placeholder="WiFi Password (blank=open)"><input type="text" class="inp" id="cfg-user" placeholder="Your Name (Boot Animation)"><input type="text" class="inp" id="cfg-insta" placeholder="Instagram ID (Boot Animation)"><button class="btn btn-p btn-f" onclick="saveConfig()"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"/><polyline points="17 21 17 13 7 13 7 21"/><polyline points="7 3 7 8 15 8"/></svg> Save Settings</button></div></div>
   <div class="card"><div class="card-title"><span class="dot"></span>System Info</div><div style="font-size:.72rem;line-height:2.2;color:var(--dim)"><div>Chip <span style="float:right;color:var(--w);font-family:var(--mono)" id="si-chip">--</span></div><div>Rev <span style="float:right;color:var(--w);font-family:var(--mono)" id="si-rev">--</span></div><div>CPU <span style="float:right;color:var(--w);font-family:var(--mono)" id="si-cpu">--</span></div><div>Flash <span style="float:right;color:var(--w);font-family:var(--mono)" id="si-flash">--</span></div><div>SDK <span style="float:right;color:var(--w);font-family:var(--mono)" id="si-sdk">--</span></div><div>Firmware <span style="float:right;color:var(--g);font-weight:700;font-family:var(--mono)" id="si-fw">V1.0.0</span></div></div></div>
   <button class="btn btn-d btn-f" onclick="confirmReboot()"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/><path d="M3 3v5h5"/></svg> Reboot Device</button>
-  
-  <div class="card about" style="text-align:center; padding:30px 20px;">
-    <div style="display:flex; justify-content:center; margin-bottom:15px;">
-      <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="var(--g)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
-    </div>
-    <div class="about-name" style="font-size:1.5rem; font-weight:800; letter-spacing:2px; color:var(--w);">CYBERKALLAN</div>
-    <div class="about-powered" style="color:var(--g); font-family:var(--mono); font-size:0.8rem; margin:8px 0 20px;">NeoCAT V1 &bull; Glyph S3</div>
-    
-    <div style="display:flex; justify-content:center; gap:16px; margin-bottom:20px;">
-      <a href="https://github.com/cyberkallan" target="_blank" style="color:var(--dim); transition:color 0.2s;"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg></a>
-      <a href="https://instagram.com/cyberkallan" target="_blank" style="color:var(--dim); transition:color 0.2s;"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg></a>
-      <a href="https://youtube.com/c/cyberkallan" target="_blank" style="color:var(--dim); transition:color 0.2s;"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"></path><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon></svg></a>
-      <a href="https://discord.gg/cyberkallan" target="_blank" style="color:var(--dim); transition:color 0.2s;"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg></a>
+  <div class="card about">
+    <div class="about-bg-flare"></div>
+    <div class="about-logo-wrap">
+      <svg width="64" height="64" viewBox="0 0 100 100" fill="none" stroke="var(--g)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="filter:drop-shadow(0 0 15px rgba(0,255,65,0.4));">
+        <path d="M 50 90 L 20 45 L 15 10 L 40 25 L 50 20 L 60 25 L 85 10 L 80 45 Z"/>
+        <path d="M 20 45 L 50 70 L 80 45"/>
+        <path d="M 40 25 L 50 50 L 60 25"/>
+        <path d="M 32 42 L 44 48" stroke-width="4"/>
+        <path d="M 68 42 L 56 48" stroke-width="4"/>
+      </svg>
     </div>
     
-    <div class="about-legal" style="font-size:0.65rem; color:var(--dim2); border-top:1px solid var(--s3); padding-top:15px;">ESP32-S3 Security Toolkit<br>For authorised research only.</div>
+    <div class="about-name">NEOCAT</div>
+    <div class="about-powered">Powered by Glyph S3 &times; Hexlabs</div>
+    
+    <div class="about-divider"></div>
+    
+    <div class="about-role">Lead Architect</div>
+    <div class="about-author">ARJUN TM</div>
+    
+    <div style="display:flex; justify-content:center; gap:25px; position:relative; z-index:1;">
+      <a href="https://github.com/cyberkallan" target="_blank" style="color:var(--dim); transition:all 0.3s;"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg></a>
+      <a href="https://instagram.com/imarjunarz" target="_blank" style="color:var(--dim); transition:all 0.3s;"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+      <a href="https://youtube.com/" target="_blank" style="color:var(--dim); transition:all 0.3s;"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"/><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"/></svg></a>
+    </div>
+    
+    <div class="about-legal">&copy; 2026 NEOCAT SECURITY</div>
   </div>
 </section>
 
@@ -888,6 +932,65 @@ async function stopWifiAttack(){await api('/api/wifi/stop',{method:'POST'});toas
 function quickBeacon(){navBtns.forEach(b=>b.classList.remove('active'));navBtns[1].classList.add('active');updateIndicator(navBtns[1]);$$('.tab-content').forEach(s=>s.classList.remove('active'));$('#tab-wifi').classList.add('active');$('#beacon-ssids').focus()}
 
 /* ═══════════════════════════════════════════════════════════════
+   CLONE AP
+   ═══════════════════════════════════════════════════════════════ */
+// Update clone info label when a network is selected
+var _origSn = window._sn;
+window._sn = function(i) {
+  selNet = (selNet===i) ? -1 : i;
+  renderWifi();
+  // Update clone info
+  var info = $('#clone-info');
+  if (selNet >= 0 && wifiNets[selNet]) {
+    info.innerHTML = 'Target: <span style="color:var(--g);font-weight:700">' + (wifiNets[selNet].ssid || '&lt;Hidden&gt;') + '</span> (CH ' + wifiNets[selNet].channel + ')';
+  } else {
+    info.textContent = 'Select a network above first';
+  }
+};
+
+async function startCloneAP() {
+  if (selNet < 0 || !wifiNets[selNet]) {
+    toast('Select a network first', 'warning');
+    return;
+  }
+  var tpl = parseInt($('#clone-template').value) || 0;
+  var title = $('#clone-title').value.trim() || wifiNets[selNet].ssid || 'Welcome';
+  var ssidName = wifiNets[selNet].ssid;
+
+  showModal('Clone AP',
+    'Start clone AP "<b>' + ssidName + '</b>"?<br><span style="font-size:.7rem;opacity:.7">Captive portal will show the selected template.</span>',
+    async () => {
+      var res = await post('/api/wifi/clone', {
+        scanIndex: selNet,
+        template: tpl,
+        title: title
+      });
+      if (res && res.status === 'starting') {
+        toast('Clone AP starting: ' + ssidName, 'info');
+        addLog('Clone AP: ' + ssidName + ' (tpl ' + tpl + ')', 'warn');
+        $('#btn-clone-start').style.display = 'none';
+        $('#btn-clone-stop').style.display = 'inline-flex';
+        $('#clone-status').style.display = 'block';
+        $('#clone-ssid-label').textContent = ssidName;
+      } else {
+        toast('Clone failed', 'error');
+      }
+    }
+  );
+}
+
+async function stopCloneAP() {
+  showModal('Stop Clone', 'Stop clone AP and revert to NeoCAT WiFi?', async () => {
+    await post('/api/wifi/clone/stop', {});
+    toast('Clone AP stopped', 'success');
+    addLog('Clone AP stopped', 'info');
+    $('#btn-clone-start').style.display = 'inline-flex';
+    $('#btn-clone-stop').style.display = 'none';
+    $('#clone-status').style.display = 'none';
+  });
+}
+
+/* ═══════════════════════════════════════════════════════════════
    BLE
    ═══════════════════════════════════════════════════════════════ */
 async function doBleScan(){
@@ -946,6 +1049,55 @@ async function stopChatRoom(){
   });
 }
 
+/* ═══════════════════════════════════════════════════════════════
+   TERMINAL
+   ═══════════════════════════════════════════════════════════════ */
+function termPrint(text, cls=''){
+  const d=$('#term-display');
+  d.innerHTML+='<div class="line '+cls+'">'+text.replace(/</g,'&lt;').replace(/>/g,'&gt;')+'</div>';
+  d.scrollTop=d.scrollHeight;
+}
+window.termSend = async function(){
+  const inp=$('#term-input');
+  const cmd=inp.value.trim();
+  if(!cmd)return;
+  inp.value='';
+  termPrint('neocat> '+cmd, 'info');
+  
+  if(cmd==='clear'){$('#term-display').innerHTML='';return}
+  if(cmd==='help'){
+    termPrint('Available Commands:');
+    termPrint('  help         - Show this menu');
+    termPrint('  clear        - Clear terminal');
+    termPrint('  scan wifi    - Scan WiFi networks');
+    termPrint('  scan ble     - Scan BLE devices');
+    termPrint('  deauth all   - Deauth all networks');
+    termPrint('  stop         - Stop all attacks');
+    termPrint('  reboot       - Reboot device');
+    return;
+  }
+  
+  // Local shortcuts
+  if(cmd==='scan wifi'){doWifiScan();termPrint('Starting WiFi Scan...','warn');return}
+  if(cmd==='scan ble'){doBleScan();termPrint('Starting BLE Scan...','warn');return}
+  if(cmd==='deauth all'){startDeauth('all');return}
+  if(cmd==='stop'){stopWifiAttack();stopBleSpam();return}
+  if(cmd==='reboot'){confirmReboot();return}
+  
+  // Forward to backend API for everything else
+  try {
+    const res = await post('/api/term', { cmd });
+    if(res && res.output) {
+      termPrint(res.output);
+    } else {
+      termPrint('No response from device', 'err');
+    }
+  } catch(e) {
+    termPrint('Command failed: ' + e.message, 'err');
+  }
+}
+$('#term-input').addEventListener('keypress',e=>{if(e.key==='Enter')termSend()});
+
 window.doWifiScan=doWifiScan;window.doBleScan=doBleScan;window.quickBeacon=quickBeacon;
 window.startDeauth=startDeauth;window.startBeacon=startBeacon;window.startRickroll=startRickroll;
 window.startProbe=startProbe;window.stopWifiAttack=stopWifiAttack;
@@ -979,6 +1131,13 @@ function handleWS(d){
     if(d.cpuTemp!==undefined){$('#sh-temp').textContent=d.cpuTemp.toFixed(1)+'°C';$('#sh-temp').style.color=d.cpuTemp>70?'#ff4444':'var(--w)'}
     if(d.cpuFreq)$('#sh-freq').textContent=d.cpuFreq+' MHz';
     $('#sh-ram').textContent=fmtB(d.freeHeap||0);$('#sh-ram').style.color=(d.freeHeap||0)<30000?'#ff4444':'var(--w)';
+    /* Battery health */
+    if(d.batteryPercent!==undefined){
+      let bStr = d.batteryPercent + '% (' + d.batteryVoltage.toFixed(2) + 'V)';
+      if(d.isCharging) bStr = '⚡ ' + bStr;
+      $('#sh-bat').textContent = bStr;
+      $('#sh-bat').style.color = d.batteryPercent < 20 && !d.isCharging ? '#ff4444' : 'var(--g)';
+    }
     /* Chat status */
     if(d.chatActive){$('#sh-chat').textContent=d.chatRoom||'Active';$('#sh-chat').style.color='var(--g)';$('#btn-chat-start').style.display='none';$('#btn-chat-stop').style.display='inline-flex';$('#chat-status').innerHTML='Room: <span style="color:var(--g)">Active</span> — '+d.chatUsers+' users'}
     else{$('#sh-chat').textContent='Inactive';$('#sh-chat').style.color='var(--dim2)';$('#sh-chatusers').textContent='0'}

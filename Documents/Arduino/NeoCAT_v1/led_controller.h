@@ -24,6 +24,11 @@
 #define LED_PIN   7
 #define LED_COUNT 1
 
+#ifndef LED_BUILTIN
+#define LED_BUILTIN 46 // Common built-in LED pin for ESP32-S3 boards if undefined
+#endif
+#define HARDWARE_LED_PIN LED_BUILTIN
+
 enum LEDMode {
   LED_OFF = 0,
   LED_BOOT,
@@ -67,4 +72,7 @@ private:
 
   /// Write a single color to the strip and show
   void _setPixel(uint32_t color);
+
+  /// Write brightness to the hardware LED
+  void _setHardwareLedBrightness(float brightness);
 };

@@ -33,6 +33,10 @@ void LEDController::begin() {
   _strip.setBrightness(50);
   _strip.clear();
   _strip.show();
+
+  pinMode(HARDWARE_LED_PIN, OUTPUT);
+  digitalWrite(HARDWARE_LED_PIN, LOW); // Start off
+
   _mode = LED_OFF;
   Serial.println("[LED] Controller initialized.");
 }
@@ -71,6 +75,7 @@ void LEDController::bootAnimation() {
     uint8_t g = (uint8_t)(255.0f * t);
     uint8_t b = (uint8_t)(255.0f * t);
     _setPixel(_strip.Color(0, g, b));
+    _setHardwareLedBrightness(1.0f - t); // Hardware LED fades down to idle brightness
     delay(10);  // 20 × 10 ms = 200 ms
   }
 
@@ -155,12 +160,14 @@ void LEDController::update() {
   switch (_mode) {
     case LED_OFF:
       _setPixel(0);
+      _setHardwareLedBrightness(0.0f);
       break;
 
     case LED_BOOT:
       // Boot animation is blocking — this shouldn't be reached,
       // but show cyan as a fallback.
       _setPixel(_strip.Color(0, 255, 255));
+      _setHardwareLedBrightness(1.0f);
       break;
 
     case LED_IDLE:
@@ -186,6 +193,7 @@ void LEDController::update() {
     case LED_SUCCESS:
       // Solid green for 2 s, then revert
       _setPixel(_strip.Color(0, 255, 0));
+      _setHardwareLedBrightness(1.0f);
       if (now - _modeSetTime >= STATUS_DURATION_MS) {
         _mode = _prevMode;
         _breathPhase = 0;
@@ -195,6 +203,7 @@ void LEDController::update() {
     case LED_ERROR:
       // Solid red for 2 s, then revert
       _setPixel(_strip.Color(255, 0, 0));
+      _setHardwareLedBrightness(1.0f);
       if (now - _modeSetTime >= STATUS_DURATION_MS) {
         _mode = _prevMode;
         _breathPhase = 0;
@@ -203,6 +212,7 @@ void LEDController::update() {
 
     case LED_CUSTOM:
       _setPixel(_strip.Color(_customR, _customG, _customB));
+      _setHardwareLedBrightness(1.0f);
       break;
   }
 }
@@ -230,6 +240,8 @@ uint32_t LEDController::_breathe(uint8_t r, uint8_t g, uint8_t b, float speed) {
   // Apply a minimum floor so the LED never fully turns off
   brightness = 0.05f + brightness * 0.95f;
 
+  _setHardwareLedBrightness(brightness);
+
   return _strip.Color(
     (uint8_t)(r * brightness),
     (uint8_t)(g * brightness),
@@ -248,6 +260,11 @@ uint32_t LEDController::_rainbow(float speed) {
   if (_hue >= 65536.0f) {
     _hue -= 65536.0f;
   }
+  
+  // Modulate hardware LED brightness smoothly during rainbow
+  float brightness = (sinf(_hue * 6.2831853f / 65536.0f) + 1.0f) / 2.0f;
+  _setHardwareLedBrightness(0.1f + brightness * 0.9f);
+
   return _strip.ColorHSV((uint16_t)_hue, 255, 255);
 }
 
@@ -257,4 +274,19 @@ uint32_t LEDController::_rainbow(float speed) {
 void LEDController::_setPixel(uint32_t color) {
   _strip.setPixelColor(0, color);
   _strip.show();
+}
+
+/**
+ * Write brightness to the hardware LED.
+ * Uses analogWrite for PWM dimming (0-255).
+ * Assumes active-high LED (HIGH = ON). 
+ */
+void LEDController::_setHardwareLedBrightness(float brightness) {
+  // Clamp brightness between 0.0 and 1.0
+  if (brightness < 0.0f) brightness = 0.0f;
+  if (brightness > 1.0f) brightness = 1.0f;
+  
+  // Convert to 8-bit PWM value
+  uint8_t pwmVal = (uint8_t)(brightness * 255.0f);
+  analogWrite(HARDWARE_LED_PIN, pwmVal);
 }
